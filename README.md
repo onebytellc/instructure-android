@@ -1,60 +1,45 @@
 # Instructure Android
+
 Instructure's Open Source Android Code
 
 The open source code provided by the Android Team at Instructure. 
 
-##Applications:
+## Applications:
 
-####The Applications we have published on Google Play.
+#### The Applications we have published on Google Play.
 
-[Canvas](https://play.google.com/store/apps/details?id=com.instructure.candroid) 
-Used by Students all over the world to be smarter, go faster, and do more. 
+App | Description
+--- | ---
+[Canvas][canvas]              | Used by Students all over the world to be smarter, go faster, and do more. 
+[SpeedGrader][speedgrader]    | Used by Teachers all over the work to grade at lightning speeds.
+[Canvas Parent][parent]       | Used by Parents all over the world to be parents.
+[Teacher Tools][teachertools] | Used by Teachers all of the world to make life a little easier. 
+[Canvas Polls][polls]         | Used to take live polls. 
 
-[SpeedGrader](https://play.google.com/store/apps/details?id=com.instructure.speedgrader)
-Used by Teachers all over the work to grade at lightning speeds.
+[canvas]: https://play.google.com/store/apps/details?id=com.instructure.candroid
+[speedgrader]: https://play.google.com/store/apps/details?id=com.instructure.speedgrader
+[parent]: https://play.google.com/store/apps/details?id=com.instructure.parentapp
+[teachertools]: https://play.google.com/store/apps/details?id=com.instructure.teacheraid
+[polls]: https://play.google.com/store/apps/details?id=com.instructure.androidpolling.app
 
-[Canvas Parent](https://play.google.com/store/apps/details?id=com.instructure.parentapp)
-Used by Parents all over the world to be parents.
+## Modules:
 
-[Teacher Tools](https://play.google.com/store/apps/details?id=com.instructure.teacheraid)
-Used by Teachers all of the world to make life a little easier. 
+#### These are things that we use internally to create our applications.
 
-[Canvas Polls](https://play.google.com/store/apps/details?id=com.instructure.androidpolling.app)
-Used to take live polls. 
-
-##Modules:
-
-####These are things that we use internally to create our applications.
-
-[BluePrint]()
-An MVP Architecture that depends on PandaRecyclerView. 
-
-[Canvas-Api]()
-*Deprecated* - Canvas for Android Api used to talk to Canvas LMS.
-
-[Canvas-Api-2]()
-Canvas for Android Api used to talk to the Canvas LMS and is testable.
-
-[Espresso]()
-The UI testing library built on Espresso.
-
-[Foosball]()
-A Foosball Application created and used interally to boost fun by over 120%.
-
-[Login-Api]()
-*Depricated* - The Library used to making logging in and getting a token relatively easy. 
-
-[Login-Api-2]()
-The libarary used to make logging in and getting a toke relative easy and is testable. 
-
-[PandaUtils]()
-The junk drawer of things.
-
-[PandaRecyclerView]()
-A fancy RecyclerView library that supports expanding and collapsing, pagination, and stuff like that.
+Module | Description
+   --- | ---
+BluePrint    | An MVP Architecture that depends on PandaRecyclerView. 
+Canvas-Api   | *Deprecated* - Canvas for Android Api used to talk to Canvas LMS.
+Canvas-Api-2 | Canvas for Android Api used to talk to the Canvas LMS and is testable.
+Espresso     | The UI testing library built on Espresso.
+Foosball     | A Foosball Application created and used interally to boost fun by over 120%.
+Login-Api    | *Depricated* - The Library used to making logging in and getting a token relatively easy. 
+Login-Api-2  | The libarary used to make logging in and getting a toke relative easy and is testable. 
+PandaUtils   | The junk drawer of things.
+PandaRecyclerView | A fancy RecyclerView library that supports expanding and collapsing, pagination, and stuff like that.
 
 
-####Our applications are licensed under the GPLv3 License.
+#### Our applications are licensed under the GPLv3 License.
 
 ```
 Copyright (C) 2016 - present  Instructure, Inc.
@@ -72,7 +57,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ```
 
-####Our Modules are produced under the Apache v2 License.
+#### Our Modules are licensed under the Apache v2 License.
 
 ```
 Copyright (C) 2016 - present Instructure, Inc.
