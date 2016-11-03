@@ -1,4 +1,4 @@
-# Inst-Android
+# Instructure Android
 Instructure's Open Source Android Code
 
 The open source code provided by the Android Team at Instructure. 
