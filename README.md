@@ -5,7 +5,7 @@ The open source code provided by the Android Team at Instructure.
 
 ##Applications:
 
-The Applications we have published on Google Play.
+####The Applications we have published on Google Play.
 
 [Canvas](https://play.google.com/store/apps/details?id=com.instructure.candroid)
 
@@ -29,7 +29,7 @@ Used to take live polls.
 
 ##Modules:
 
-These are things that we use internally to create our applications.
+####These are things that we use internally to create our applications.
 
 [BluePrint]()
 
