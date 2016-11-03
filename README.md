@@ -29,11 +29,11 @@ App | Description
 Module | Description
    --- | ---
 BluePrint    | An MVP Architecture that depends on PandaRecyclerView. 
-Canvas-Api]  | *Deprecated* - Canvas for Android Api used to talk to Canvas LMS.
+Canvas-Api   | *Deprecated* - Canvas for Android Api used to talk to Canvas LMS.
 Canvas-Api-2 | Canvas for Android Api used to talk to the Canvas LMS and is testable.
-Espresso]    | The UI testing library built on Espresso.
+Espresso     | The UI testing library built on Espresso.
 Foosball     | A Foosball Application created and used interally to boost fun by over 120%.
-Login-Api]   | *Depricated* - The Library used to making logging in and getting a token relatively easy. 
+Login-Api    | *Depricated* - The Library used to making logging in and getting a token relatively easy. 
 Login-Api-2  | The libarary used to make logging in and getting a toke relative easy and is testable. 
 PandaUtils   | The junk drawer of things.
 PandaRecyclerView | A fancy RecyclerView library that supports expanding and collapsing, pagination, and stuff like that.
