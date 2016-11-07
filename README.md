@@ -11,7 +11,7 @@ The open source code provided by the Android Team at Instructure.
 App | Description
 --- | ---
 [Canvas][canvas]              | Used by Students all over the world to be smarter, go faster, and do more. 
-[SpeedGrader][speedgrader]    | Used by Teachers all over the work to grade at lightning speeds.
+[SpeedGrader][speedgrader]    | Used by Teachers all over the world to grade at lightning speeds.
 [Canvas Parent][parent]       | Used by Parents all over the world to be parents.
 [Teacher Tools][teachertools] | Used by Teachers all of the world to make life a little easier. 
 [Canvas Polls][polls]         | Used to take live polls. 
@@ -33,8 +33,8 @@ Canvas-Api   | *Deprecated* - Canvas for Android Api used to talk to Canvas LMS.
 Canvas-Api-2 | Canvas for Android Api used to talk to the Canvas LMS and is testable.
 Espresso     | The UI testing library built on Espresso.
 Foosball     | A Foosball Application created and used interally to boost fun by over 120%.
-Login-Api    | *Depricated* - The Library used to making logging in and getting a token relatively easy. 
-Login-Api-2  | The libarary used to make logging in and getting a toke relative easy and is testable. 
+Login-Api    | *Deprecated* - The Library used to making logging in and getting a token relatively easy. 
+Login-Api-2  | The libarary used to make logging in and getting a token relative easy and is testable. 
 PandaUtils   | The junk drawer of things.
 PandaRecyclerView | A fancy RecyclerView library that supports expanding and collapsing, pagination, and stuff like that.
 
