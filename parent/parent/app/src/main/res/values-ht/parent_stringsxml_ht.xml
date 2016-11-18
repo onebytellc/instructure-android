@@ -1,0 +1,164 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="action_settings">Reglaj</string>
+    <string name="canvasLogo">Logo Canvas</string>
+    <string name="email">Imèl</string>
+    <string name="parent_email">Imèl Paran</string>
+    <string name="confirmPassword">Konfime Modpas</string>
+    <string name="firstName">Non</string>
+    <string name="lastName">Siyati</string>
+    <string name="password">Modpas</string>
+    <string name="log_in">Konekte</string>
+    <string name="createAccount">Kreye Kont</string>
+    <string name="forgotPassword">Bliye Modpas</string>
+    <string name="requestPassword">Mande Modpas</string>
+    <string name="fullName">Non Konplè</string>
+    <string name="invalidEmail">Adrès Imèl envalid. Eseye ankò</string>
+    <string name="next">Pwochen</string>
+    <string name="createAccountMessage">Y ap voye yon imèl sou adrès imèl ou bay la pou fini ak enskripsyon an.</string>
+    <string name="accountCreationSuccess">Kreyasyon kont reyisi. Tanpri tcheke imèl ou pou fini ak enskripsyon an.</string>
+    <string name="errorOccurred">Gen yon erè ki fèt sanzatann. Tanpri eseye ankò.</string>
+    <string name="unknownDevice">Aparèy Enkoni</string>
+    <string name="addStudent">Ajoute Elèv</string>
+    <string name="school">Lekòl</string>
+    <string name="finish">Fini</string>
+    <string name="close">Fèmen</string>
+    <string name="noStudents">Pa gen elèv disponib. Pou ajoute yon elèv tape sou twa pwen ki nan meni pi wo a.</string>
+    <string name="noStudentsView">Pa gen elèv ki asosye a kont ou a.</string>
+    <string name="noCourses">Elè sa a pa gen kou disponib</string>
+    <string name="noAlerts">Elèv sa a pa gen alèt pou afiche.</string>
+    <string name="noItemsToDisplayShort">Okenn atik</string>
+    <string name="emailsSentTo">Imèl ale jwenn:</string>
+    <string name="logged_in_as">Konekte tankou:</string>
+    <string name="notifyWhen">Fè mwen konnen lè</string>
+    <string name="gradeAbove">Kategori kou pi wo a</string>
+    <string name="gradeBelow">Kategori kou pi ba a</string>
+    <string name="assignmentMissing">Sesyon manke</string>
+    <string name="teacherAnnouncements">Anons Kou</string>
+    <string name="institutionAnnouncements">Anons Enstitisyon</string>
+    <string name="assignmentGradeAbove">Kategori sesyon pi wo a</string>
+    <string name="assignmentGradeBelow">Sesyon klas pi ba a</string>
+    <string name="never">Jamè</string>
+    <string name="save">Anrejistre</string>
+    <string name="enterThreshold">Antre Pousantaj</string>
+    <string name="setGradeValueMessage">Konfigire valè nòt lè ou vle yo avèti ou</string>
+    <string name="removeStudent">Elimine Elèv</string>
+    <string name="removingStudent">Eliminasyon Elèv</string>
+    <string name="studentRemoved">Elèv elimine kòrèkteman</string>
+    <string name="studentAdded">Elèv ajoute kòrèkteman</string>
+    <string name="courses">Kou</string>
+    <string name="week">Semenn</string>
+    <string name="alerts">Alèt</string>
+    <string name="alert">Alèt</string>
+    <string name="weekEmptyView">Pa gen sesyon oswa aktivite semenn sa a!</string>
+    <string name="toolbar_close">Fèmen ba ikòn nan</string>
+    <string name="syllabus">Pwogram</string>
+    <string name="emptySyllabus">Kou sa a pa gen pwogram.</string>
+    <string name="noLocation">Okenn Anplasman Espesyal</string>
+    <string name="previousAlerts">Alèt Anvan</string>
+    <string name="currentAlerts">Alèt Aktyèl</string>
+    <string name="badDomainError">Domèn envalid. Eseye ankò.</string>
+    <string name="unauthorized">Ou pa gen otorizasyon pou wè enfòmasyon sa yo.</string>
+    <string name="revokedTokenErrorContent">Ou pa gen otorizasyon pou w wè enfòmasyon %1$s. Ou kapab re otorize elèv ou a nan meni konfigirasyon an.</string>
+    <string name="revokedTokenErrorTitle">Token Aksè Revoke</string>
+    <string name="featureFlagDisabledError">Enstitisyon sa a pa bay aksè a aplikasyon mobil Canvas Parent lan.</string>
+
+    <!-- Help strings -->
+    <string name="askInstructor">Poze Enstriktè ou a yon Kesyon</string>
+    <string name="askInstructorDetails">Kesyon yo ap soumèt a enstriktè ou a</string>
+    <string name="searchGuides">Chèche nan Gid Canvas</string>
+    <string name="canvasGuides">Gid Canvas</string>
+    <string name="searchGuidesDetails">Jwenn repons a kesyon yo poze souvan</string>
+    <string name="reportProblem">Rapòte yon Pwoblèm</string>
+    <string name="reportProblemDetails">Si app la konpòte li mal, fè nou konnen</string>
+    <string name="requestFeature">Mande yon Fonksyon</string>
+    <string name="requestFeatureDetails">Ou gen yon ide de kijan pou amelyore app la?</string>
+    <string name="shareYourLove">Pataje lanmou ou genyen pou App la</string>
+    <string name="shareYourLoveDetails">Di nou kisa w pi renmen nan app la</string>
+    <string name="sendFeedback">Voye Kòmantè</string>
+    <string name="sendMail">Voye Imèl&#8230;</string>
+    <string name="mobileSupportEmailAddress">mobilesupport@instructure.com</string>
+    <string name="supportEmailAddress">support@instructure.com</string>
+    <string name="help_domain">Domèn:</string>
+    <string name="help_versionNum">Vèsyon:</string>
+    <string name="help_userId">Non Itilizatè:</string>
+    <string name="help_email">Imèl:</string>
+    <string name="help_locale">Lokal:</string>
+    <string name="installDate">Dat Enstalasyon:</string>
+    <string name="icon">Ikòn</string>
+    <string name="due">Delè:</string>
+    <string name="no_due_date">San Delè</string>
+    <string name="tapToSet">Tape pou konfigire</string>
+    <string name="alarmNotSet">Alam nan pa kapab pwograme. Eseye ankò.</string>
+    <string name="could_not_route_course">Pa kapab jwenn enskripsyon kou a.</string>
+    <string name="could_not_route_assignment">Pa kapab jwenn sesyon an.</string>
+    <string name="email_already_exists">Yon itilizatè egziste deja ak imèl sa a.</string>
+    <string name="password_reset_success">Y ap voye yon imèl pou ou sou kijan pou reinisyalize modpas ou a.</string>
+    <string name="password_reset_no_user">Nou pa jwenn okenn itilizatè ak adrès imèl sa a.</string>
+    <string name="reset_password">Reyinisyalize Modpas</string>
+    <string name="location">Anplasman</string>
+    <string name="time">Lè</string>
+    <string name="student_avatar">Avata Elèv</string>
+    <string name="previous">Anvan</string>
+    <string name="empty_view">Montre afichaj la lè yo pa jwenn okenn kontni</string>
+    <string name="tab_icon">Icon above the tab</string>
+    <string name="add_student_icon">Ikòn pou ajoute elèv</string>
+    <string name="canvas_logo">Logo Canvas</string>
+    <string name="course_threshold_grade_above_invalid">Limit sa a dwe pi wo limit kou enferyè a.</string>
+    <string name="course_threshold_grade_below_invalid">Limit sa a dwe pi ba limit kou siperyè a.</string>
+    <string name="assignment_threshold_grade_above_invalid">Limit sa a dwe pi wo limit sesyon enferyè a.</string>
+    <string name="assignment_threshold_grade_below_invalid">Limit sa a dwe pi ba limit sesyon siperyè a.</string>
+    <string name="set_reminder">Pwograme Alam</string>
+    <string name="enter_student_institution">Antre enstitisyon elèv la</string>
+    <string name="enter_student_login">Antre non itilizatè ak modpas elèv la</string>
+    <string name="access_not_enabled">Enstitisyon sa a pa bay aksè a aplikasyon mobil Canvas Parent lan.</string>
+    <string name="dismiss">Rejte</string>
+    <string name="invalid_username_password">Konbinezon imèl ak modpas la envalid.</string>
+    <string name="opening">Opening&#8230;</string>
+    <string name="locked_assignment_desc">Sesyon sa a fè pati modil %s e li poko debloke.</string>
+    <string name="locked_assignment_desc_line2">Al gade paj modil kou yo nan yon navigatè pou jwenn enfòmasyon sou kijan pou debloke kontni sa a.</string>
+    <string name="locked_assignment_not_module">Sesyon sa a bloke.</string>
+    <string name="no_description">Pa gen deskripsyon pou sesyon sa a</string>
+    <string name="cannot_view_file">Ou pa kapab wè fichye sa a nan app la.Tanpri gade li nan yon navigatè.</string>
+    <string name="calendar_event">Kalandriye Aktivite</string>
+    <string name="set_reminder_toggle">Aktive/Dezaktive Alam</string>
+    <string name="or">Oswa</string>
+    <string name="canvas_login_text">Konekte ak Canvas</string>
+
+    <!-- Feature Request -->
+    <string name="featureSubject">Ide pou app Canvas Parent [Android]</string>
+    <string name="understandRequest">Enfòmasyon annapre yo ap ede nou konprann ide ou a pi byen:</string>
+
+    <!-- Distance Strings -->
+    <string name="lessThanOne">&lt; 1 mile (1.6 km)</string>
+    <string name="oneMile">1 mile (1.6 km)</string>
+    <string name="miles">mile</string>
+    <string name="kilometers">km</string>
+
+    <string name="grade">Klas:</string>
+    <string name="notGraded">Poko klase</string>
+    <string name="missing">Manke</string>
+    <string name="submitted">Soumèt</string>
+    <string name="in_class">Nan Klas</string>
+    <string name="excused">Egzante</string>
+    <string name="late">An Reta</string>
+    <string name="greaterThan9">9+</string>
+
+    <string name="onlyCanvasObservers">Sèlman obsèvatè Canvas ki ka otantifye nan Canvas Parent.</string>
+</resources>

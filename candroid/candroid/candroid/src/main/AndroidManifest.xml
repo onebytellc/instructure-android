@@ -1,0 +1,384 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.instructure.candroid">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <permission android:name="com.instructure.candroid.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.instructure.candroid.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTER" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/canvas_logo_white"
+        android:label="@string/app_name"
+        android:theme="@style/CanvasMaterialTheme_Default"
+        android:name=".util.ApplicationManager"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="@bool/supportRTL"
+        android:largeHeap="true"
+        tools:replace="android:supportsRtl">
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/canvas"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.NavigationActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/canvas"
+            android:theme="@style/CanvasMaterialTheme_Default">
+
+            <intent-filter>
+                <action android:name="com.instructure.candroid.ROUTING_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ColorPickerActivity"
+            android:theme="@style/CanvasMaterialTheme_Default.Translucent"/>
+
+        <activity
+            android:name=".activity.CandroidPSPDFActivity"
+            android:theme="@style/PSPDFKitTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".activity.NotificationPreferencesActivity"
+            android:theme="@style/CanvasMaterialTheme_Default"
+            android:label="@string/notifications"/>
+
+        <activity android:name=".activity.TutorialActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CanvasMaterialTheme_Default.Fullscreen"/>
+
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name="com.instructure.loginapi.login.OAuthWebLogin"
+            android:label="OAuthWebLogin"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/settings"
+            android:theme="@style/CanvasMaterialTheme_Default"/>
+
+        <activity android:name=".activity.PandaAvatarActivity"
+            android:label="@string/pandaAvatar"
+            android:theme="@style/CanvasMaterialTheme_Default"/>
+        <activity
+            android:name=".activity.InternalWebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CanvasMaterialTheme_Default"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name=".activity.NewFeatureBannerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity android:name=".activity.SearchableActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ProfileBackdropPickerActivity"
+            android:label="@string/selectBackground"
+            android:theme="@style/CanvasMaterialTheme_Default"/>
+
+        <activity
+            android:name="com.instructure.pandautils.activities.KalturaMediaUploadPicker"
+            android:theme="@style/Theme.Kaltura"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <activity
+            android:name=".activity.InterwebsToApplication"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <data
+                    android:host="*.instructure.com"
+                    android:scheme="https"/>
+                <data
+                    android:host="*.instructure.com"
+                    android:scheme="http"/>
+                <data
+                    android:host="*.canvas.net"
+                    android:scheme="https"/>
+                <data
+                    android:host="*.canvas.net"
+                    android:scheme="http"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="*"
+                    android:scheme="canvas-courses"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ShareFileUploadActivity"
+            android:label="@string/canvas"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@style/CanvasMaterialTheme_Default.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="application/*"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Widget Items -->
+        <activity
+            android:name=".activity.NotificationWidgetRouter"
+            android:theme="@style/Theme.AppCompat"
+            android:label=""
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:name=".activity.WidgetSetupActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.BookmarkShortcutActivity"
+            android:icon="@drawable/ic_bookmark_shortcut"
+            android:label="@string/app_name"
+            android:theme="@style/CanvasMaterialTheme_DefaultNoTransparency">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.instructure.pandautils.services.KalturaUploadService"
+            android:exported="false"/>
+        <service android:name="com.instructure.pandautils.services.FileUploadService"/>
+        <service android:name=".widget.TodoWidgetService" />
+        <service android:name=".widget.GradesWidgetService" />
+        <service android:name=".widget.NotificationWidgetService" />
+
+        <receiver android:name=".receivers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receivers.PackageUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" android:path="com.instructure.candroid" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receivers.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.AlarmService" />
+
+        <!--Push Notifications-->
+
+        <receiver android:name=".receivers.PushDeleteReceiver"/>
+
+        <receiver android:name=".receivers.PushExternalReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.instructure.candroid"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.PushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.PushRegistrationService"/>
+
+        <service android:name=".service.PushInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
+        <!-- To do widget -->
+        <receiver
+            android:name=".widget.TodoWidgetProvider"
+            android:enabled="@bool/is_api_14_or_greater"
+            android:label="@string/todoWidgetTitleLong">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.instructure.candroid.widget.todowidget.REFRESH" />
+                <action android:name="com.instructure.candroid.widget.allwidget.REFRESH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/todo_widget_info"/>
+        </receiver>
+        <service
+            android:name=".widget.TodoViewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <instrumentation
+            android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+            android:targetPackage="com.instructure.candroid"/>
+
+        <!-- Grades Widget -->
+        <receiver
+            android:name=".widget.GradesWidgetProvider"
+            android:enabled="@bool/is_api_14_or_greater"
+            android:label="@string/gradesWidgetTitleLong">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.instructure.candroid.widget.gardeswidget.REFRESH" />
+                <action android:name="com.instructure.candroid.widget.allwidget.REFRESH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/grades_widget_info"/>
+        </receiver>
+        <service
+            android:name=".widget.GradesViewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <!-- Notifications widget-->
+        <receiver
+            android:name=".widget.NotificationWidgetProvider"
+            android:enabled="@bool/is_api_14_or_greater"
+            android:label="@string/notificationWidgetTitleLong">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.instructure.candroid.widget.notificationwidget.REFRESH" />
+                <action android:name="com.instructure.candroid.widget.allwidget.REFRESH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/notification_widget_info"/>
+        </receiver>
+        <service
+            android:name=".widget.NotificationViewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <!-- End of Widget Items -->
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="${crashlyticsApiKey}"/>
+
+        <!--Amazon-->
+
+        <uses-library android:name="com.amazon.webview" android:required="false"/>
+
+        <service android:name="org.chromium.content.app.SandboxedProcessService0" android:process=":sandboxed_process0"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService1" android:process=":sandboxed_process1"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService2" android:process=":sandboxed_process2"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService3" android:process=":sandboxed_process3"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService4" android:process=":sandboxed_process4"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService5" android:process=":sandboxed_process5"
+                 android:permission="org.chromium.content_shell.permission.SANDBOX" android:exported="false" />
+
+    </application>
+</manifest>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (C) 2016 - present Instructure, Inc.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  ~
+  -->
+
+<resources>
+  <string name="app_name">PandaUtils</string>
+  <string name="chooseMedia">Media auswählen</string>
+  <string name="takeVideo">Video aufnehmen</string>
+  <string name="noCameraOnDevice">Keine Kamera</string>
+  <!--KalturaPicker/uploadService-->
+  <string name="notificationTitle">Auf Canvas hochladen</string>
+  <string name="preparingUpload">Hochladen wird vorbereitet</string>
+  <string name="loadingFilesIndeterminate">Dateien werden geladen...</string>
+  <string name="fileUploadSuccess">Hochladen erfolgreich</string>
+  <string name="noNetwork">Netzwerk nicht verfügbar - bitte später noch einmal versuchen</string>
+  <string name="uploadMessage">\"Hochladen in Arbeit. Für den Upload-Status auf Meldungen achten.</string>
+  <string name="mediaUpload">Media-Upload</string>
+  <string name="uploadingFile">Datei wird hochgeladen....</string>
+  <string name="errorUploadingFile">Beim Hochladen Ihrer Datei ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.</string>
+  <string name="fileSubmission">Datei(en) abschicken</string>
+  <string name="uploadFiles">Datei(en) hochladen</string>
+  <string name="upload">Upload</string>
+  <string name="errorSendingMessage">Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.</string>
+  <!--Turn in Files-->
+  <string name="chooseFileSource">Datei wählen aus...</string>
+  <string name="addFile">Datei hinzufügen</string>
+  <string name="fromCamera">Kamera</string>
+  <string name="fromGallery">Galerie</string>
+  <string name="fromDevice">Gerät</string>
+  <string name="fromOtherApplication">Andere</string>
+  <string name="Domain">Domain</string>
+  <string name="files">Dateien</string>
+  <string name="file">Datei</string>
+  <string name="addItem">Element hinzufügen</string>
+  <string name="assignment">Aufgabe</string>
+  <string name="attachedFiles">Angehängte Dateien</string>
+  <string name="turnIn">Abgeben</string>
+  <string name="course">Kurs</string>
+  <!--rating dialog-->
+  <string name="star1">Bewertung Ein Stern</string>
+  <string name="star2">Bewertung Zwei Sterne</string>
+  <string name="star3">Bewertung Drei Sterne</string>
+  <string name="star4">Bewertung Vier Sterne</string>
+  <string name="star5">Bewertung Fünf Sterne</string>
+  <!--Submitting files-->
+  <string name="fileQuotaExceeded">Sie haben derzeit Ihre Speicherquote für Dateien überschritten.</string>
+  <string name="errorSubmittingFiles">Beim Abgeben Ihrer Dateien ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.</string>
+  <string name="errorLoadingFiles">Beim Hochladen Ihrer Datei ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Internetverbindung und versuchen es noch einmal.</string>
+  <string name="filesUploadedSuccessfully">Dateien erfolgreich hochgeladen.</string>
+  <string name="filesSubmittedSuccessfully">Dateien erfolgreich abgeschickt.</string>
+  <string name="messageSentSuccessfully">Nachricht erfolgreich gesendet.</string>
+  <string name="shareWithCanvas">Auch andere Apps können mit Canvas Dateien teilen! Suchen Sie unten in Apps nach dem Symbol und hängen es an Canvas an.</string>
+  <string name="shareWithCanvas2">Dadurch wird diese App geöffnet. Dann wählen Sie einfach den Kurs und die Aufgabe aus, für den/die Sie diese Datei abgeben möchten.</string>
+  <string name="contentDescriptionSocialShare">Symbol teilen</string>
+  <string name="submitAssignment">Aufgabe abschicken</string>
+  <string name="assignmentHeader">Aufgabe :</string>
+  <string name="submittingAssignment">Aufgabe wird abgeschickt...</string>
+  <string name="conversations">Konversationen</string>
+  <string name="inbox">Inbox</string>
+  <string name="divider">Divider</string>
+  <string name="legal">Rechtlich</string>
+  <string name="completeHomework">SCHLIESSEN Sie Ihre Hausaufgabe AB</string>
+  <string name="takeExam">Eine Prüfung ablegen</string>
+  <string name="fileIcon">Datei-Symbol</string>
+  <string name="uploadingFileNum" formatted="false">%d von %d werden hochgeladen</string>
+  <string name="fileLocked" formatted="false">%s ist gesperrt worden.</string>
+  <string name="filePermissionGranted">Die Datei steht nur zum Download bereit. Bitte versuchen Sie es erneut.</string>
+  <string name="filePermissionDenied">Die Datei kann ohne Berechtigung nicht heruntergeladen werden.</string>
+  <!--Errors-->
+  <string name="errorOccurred">Ein unerwarteter Fehler ist aufgetreten</string>
+  <string name="serverError">Ein Server-Fehler ist aufgetreten</string>
+  <string name="unauthorized">Sie dürfen hierauf nicht zugreifen. Entweder haben Sie keine Berechtigung oder Sie haben noch keinen Zugriff an sich (z.B. Ihr Kurs hat noch gar nicht begonnen).</string>
+  <string name="fileNoLongerExists">Diese Datei besteht nicht länger.</string>
+  <string name="invalidAccessToken">Ihre Sitzung ist abgelaufen. Bitte melden Sie sich an, um eine neue Sitzung zu starten.</string>
+  <string name="uploadingFromSourceFailed">Das Hochladen einer Datei von dieser Quelle konnte nicht abgeschlossen werden.</string>
+  <string name="errorGettingPhoto">Beim Holen des Fotos ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.</string>
+  <string name="fileUploadNotSupported">Sie können für die ausgewählte Aufgabe keine Dateien hochladen.</string>
+  <string name="noCourseSelected">Bitte wählen Sie einen Kurs</string>
+  <string name="selectCourse">Einen Kurs wählen</string>
+  <string name="selectAssignment">Eine Aufgabe wählen</string>
+  <string name="loadingAssignments">Aufgaben werden geladen...</string>
+  <string name="noAssignmentSelected">Bitte wählen Sie eine Aufgabe</string>
+  <string name="noAssignmentsWithFileUpload">Dieser Kurs hat keine Aufgaben, die Datei-Uploads erlauben.</string>
+  <string name="teacherNotAllowedFileSubmission">Als Dozent in diesem Kurs dürfen Sie keine Dateien abschicken</string>
+  <string name="noFilesUploaded">Sie haben keine Dateien ausgewählt.</string>
+  <string name="oneOrMoreExtensionNotAllowed">Eine oder mehrere Dateien haben eine unzulässige Dateierweiterung.</string>
+  <string name="extensionNotAllowed">Der ausgewählte Dateityp ist nicht zulässig.</string>
+  <string name="allowedExtensions">Zugelassene Erweiterungen:</string>
+  <!--Media Task Loader-->
+  <string name="noDataConnection">Bitte überprüfen Sie Ihre Datenverbindung und versuchen es noch einmal.</string>
+  <string name="noApps">Auf Ihrem Gerät sind keine Apps installiert, die mit dieser Datei umgehen können.</string>
+  <string name="noAppsShort">Kann nicht geöffnet werden</string>
+  <string name="unexpectedErrorOpeningFile">Beim Versuch, die Datei zu öffnen, ist ein unerwarteter Fehler aufgetreten.</string>
+  <string name="unexpectedErrorDownloadingFile">Beim Versuch, die Datei herunter zu laden, ist ein unerwarteter Fehler aufgetreten.</string>
+  <string name="done">Fertig</string>
+  <!--Tutorial Messages-->
+  <string name="tutorial_tipColorPickerTitle">Eine Kursfarbe auswählen</string>
+  <string name="tutorial_tipColorPickerMessage">Sie können aus einer Palette von Farben Ihre persönliche Farbe für den Kurs wählen.</string>
+  <string name="tutorial_tipCourseGradesTitle">Noten schnell ansehen</string>
+  <string name="tutorial_tipCourseGradesMessage">Zu Noten springen, indem Sie auf die Kursbenotung klicken.</string>
+  <string name="tutorial_tipLandingPageTitle">Eine Zielseite auswählen</string>
+  <string name="tutorial_tipLandingPageMessage">Durch Auswahl einer Zielseite lädt sich Canvas automatisch auf diese Seite, sobald die App beginnt.</string>
+  <string name="tutorial_tipLockSlideTitle">Bildschirm sperren oder entsperren</string>
+  <string name="tutorial_tipLockSlideMessage">Durch Sperren des Bildschirms können Sie im Bildschirm scrollen, ohne das Navigationsmenü öffnen zu müssen.</string>
+  <string name="tutorial_tipHideStudentNames">Bei der Benotungseinrichtung Namen verbergen</string>
+  <string name="tutorial_tipHideStudentNamesMessage">Befangenheit durch Verbergen der Studentenamen vermeiden</string>
+  <string name="tutorial_tipMyCoursesTitle">Meine Kurse</string>
+  <string name="tutorial_tipMyCoursesMessage">Im Nu zwischen \"Mein Kurs\" und \"Alle Kurse\" hin- und herwechseln!</string>
+  <string name="tutorial_tipSwitchUsers">Benutzer wechseln</string>
+  <string name="tutorial_tipSwitchUsersMessage">Benutzer leicht wechseln und hinzufügen</string>
+  <string name="tutorial_tipViewProfile">Ihr Profil</string>
+  <string name="tutorial_tipViewProfileMessage">Ihren Profil-Avatar oder Kulisse ansehen und ändern. Sie können auch Ihre persönlichen Dateien ansehen.</string>
+  <string name="tutorial_tipNotificationPreferences">Lieblingseinstellungen für Benachrichtigungen</string>
+  <string name="tutorial_tipNotificationPreferencesMessage">Ihre Lieblingseinstellungen filtern und die Kästchen ankreuzen, um eine bestimmte Art der Benachrichtigung zu aktivieren oder deaktivieren.</string>
+  <string name="tutorial_tipNavigationShortcuts">Rasch zwischen Kursen hin- und herspringen</string>
+  <string name="tutorial_tipNavigationShortcutsMessage">Zwischen Ihren Lieblingskursen hin- und herspringen.</string>
+  <!--Permissions-->
+  <string name="permissionDenied">Um dieses Feature nutzen zu können, müssen Sie zuvor eine Berechtigung erhalten haben.</string>
+  <string name="noConnection">Keine Verbindung</string>
+</resources>

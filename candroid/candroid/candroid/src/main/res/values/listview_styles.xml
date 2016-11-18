@@ -1,0 +1,71 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="listView">
+        <item name="android:layout_height">@dimen/itemHeight</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="header_1">
+        <item name="android:paddingBottom">@dimen/primaryPaddingBottom</item>
+        <item name="android:paddingLeft">@dimen/primaryPaddingLeft</item>
+        <item name="android:paddingTop">@dimen/primaryPaddingTop</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">@dimen/primaryText</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="header_2">
+        <item name="android:paddingLeft">@dimen/secondaryPaddingSide</item>
+        <item name="android:paddingTop">@dimen/secondaryPaddingTop</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/primaryText</item>
+        <item name="android:paddingBottom">@dimen/zero</item>
+    </style>
+
+    <style name="header_3">
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/secondaryText</item>
+        <item name="android:paddingLeft">@dimen/indented</item>
+        <item name="android:paddingBottom">@dimen/zero</item>
+        <item name="android:paddingTop">@dimen/zero</item>
+    </style>
+
+    <style name="verticalDivider">
+        <item name="android:layout_marginRight">@dimen/verticalDividerSidePadding</item>
+        <item name="android:layout_marginLeft">@dimen/verticalDividerSidePadding</item>
+        <item name="android:layout_marginBottom">@dimen/verticalDividerMargin</item>
+        <item name="android:layout_marginTop">@dimen/verticalDividerMargin</item>
+        <item name="android:layout_height">@dimen/verticalDividerHeight</item>
+        <item name="android:layout_width">@dimen/verticalDividerWidth</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_height">@dimen/itemHeight</item>
+        <item name="android:layout_width">@dimen/itemHeight</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="listView_image">
+        <item name="android:padding">@dimen/imagePadding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/listview_states</item>
+    </style>
+</resources>

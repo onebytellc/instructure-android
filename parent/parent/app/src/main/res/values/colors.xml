@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4452A6</color>
+    <color name="purpleTransparent">#997C46A9</color>
+    <color name="lightPurple">#AB98CC</color>
+    <color name="purple">#ff6543A1</color>
+    <color name="purplePressed">#ff6600CC</color>
+    <color name="pinkAlert">#ca1b76</color>
+    <color name="blueAnnouncement">#018ecf</color>
+    <color name="greyAlert">#bebdbd</color>
+    <color name="white">#ffffff</color>
+    <color name="primaryText">#333333</color>
+    <color name="secondaryText">#777777</color>
+    <color name="parentYellow">#F5A623</color>
+    <color name="parentBlue">#0096DB</color>
+    <color name="parentRed">#D0021B</color>
+    <color name="parentBackgroundDarkBlue">#d6001ec2</color>
+    <color name="parentBackgroundLightBlue">#d600E1FF</color>
+    <color name="parentStatusBarColor">#15D4F1</color>
+    <color name="parentLightBlue">#2973c1</color>
+    <color name="parentButtonBluePressed">#0055b1</color>
+    <color name="parentButtonBlue">#0068D8</color>
+    <color name="parentButtonBlueTransparent">#990068D8</color>
+    <color name="parentButtonTextDisabled">#abffffff</color>
+    <color name="parentGreen">#48AF49</color>
+
+    <color name="colorPrimaryAlpha">#ff3f51b5</color>
+    <color name="colorPrimaryDarkAlpha">#ff303f9f</color>
+    <color name="colorAccentAlpha">#ff7C46A9</color>
+
+    <color name="colorGradientYellow">#CCFFC700</color>
+    <color name="colorGradientRed">#CCFF0000</color>
+    <color name="colorGradientCyan">#CC00E1FF</color>
+    <color name="colorGradientBlue">#CC001EC2</color>
+    <color name="colorGradientMagenta">#CCD50077</color>
+    <color name="colorGradientPurple">#CC3514D3</color>
+    <color name="colorGradientLime">#CC96EB00</color>
+    <color name="colorGradientGreen">#CC00BF75</color>
+
+    <color name="colorGradientYellowNoAlpha">#FFFFC700</color>
+    <color name="colorGradientRedNoAlpha">#FFFF0000</color>
+    <color name="colorGradientCyanNoAlpha">#FF00E1FF</color>
+    <color name="colorGradientBlueNoAlpha">#FF001EC2</color>
+    <color name="colorGradientMagentaNoAlpha">#FFD50077</color>
+    <color name="colorGradientPurpleNoAlpha">#FF3514D3</color>
+    <color name="colorGradientLimeNoAlpha">#FF96EB00</color>
+    <color name="colorGradientGreeneNoAlpha">#FF00BF75</color>
+
+
+    <color name="calendar_header">#3F51B5</color>
+
+    <color name="brightPink">#ED0096</color>
+    <color name="aqua">#00BCD7</color>
+    <color name="parentAppBackground">#EFEFF1</color>
+
+    <color name="canvasTextDark">#191919</color>
+    <color name="canvasTextMedium">#4A4A4A</color>
+
+    <color name="statusBarSemiTransparent">#20000000</color>
+</resources>

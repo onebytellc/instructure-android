@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.instructure.loginapi.login" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!--Amazon-->
+
+        <uses-library android:name="com.amazon.webview" android:required="false"/>
+
+        <service android:name="org.chromium.content.app.SandboxedProcessService0" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process0" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService1" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process1" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService2" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process2" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService3" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process3" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService4" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process4" />
+        <service android:name="org.chromium.content.app.SandboxedProcessService5" android:exported="false"
+            android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process5" />
+
+    </application>
+</manifest>

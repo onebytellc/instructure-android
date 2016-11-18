@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (C) 2016 - present Instructure, Inc.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  ~
+  -->
+
+<resources>
+  <string name="app_name">Panda hjälpmedel</string>
+  <string name="chooseMedia">Välj Media</string>
+  <string name="takeVideo">Spela in Video</string>
+  <string name="noCameraOnDevice">Ingen Kamera</string>
+  <!--KalturaPicker/uploadService-->
+  <string name="notificationTitle">Laddar upp till Canvas</string>
+  <string name="preparingUpload">Förbereder uppladdning</string>
+  <string name="loadingFilesIndeterminate">Laddar filer...</string>
+  <string name="fileUploadSuccess">Uppladdningen lyckades</string>
+  <string name="noNetwork">Nätverket är inte tillgängligt - försök igen senare</string>
+  <string name="uploadMessage">\"Uppladdning utförs. Kontrollera aviseringar för uppladdningsstatus.</string>
+  <string name="mediaUpload">Mediauppladdning</string>
+  <string name="uploadingFile">Laddar upp fil...</string>
+  <string name="errorUploadingFile">Ett fel inträffade när din fil laddades upp. Försök igen.</string>
+  <string name="fileSubmission">Skicka Fil(er)</string>
+  <string name="uploadFiles">Ladda upp Fil(er)</string>
+  <string name="upload">Ladda upp</string>
+  <string name="errorSendingMessage">Ett fel inträffade när ditt meddelande skickades. Försök igen.</string>
+  <!--Turn in Files-->
+  <string name="chooseFileSource">Välj fil från...</string>
+  <string name="addFile">Lägg till fil</string>
+  <string name="fromCamera">Kamera</string>
+  <string name="fromGallery">Galleri</string>
+  <string name="fromDevice">Enhet</string>
+  <string name="fromOtherApplication">Annan</string>
+  <string name="Domain">Domän</string>
+  <string name="files">Filer</string>
+  <string name="file">Fil</string>
+  <string name="addItem">Lägg till objekt</string>
+  <string name="assignment">Uppgift</string>
+  <string name="attachedFiles">Bifogade filer</string>
+  <string name="turnIn">Lämna in</string>
+  <string name="course">Kurs</string>
+  <!--rating dialog-->
+  <string name="star1">En stjärna i betyg</string>
+  <string name="star2">Två Stjärnor i betyg</string>
+  <string name="star3">Tre Stjärnor i betyg</string>
+  <string name="star4">Fyra stjärnor i betyg</string>
+  <string name="star5">Fem stjärnor i betyg</string>
+  <!--Submitting files-->
+  <string name="fileQuotaExceeded">Du har överskridit din fillagringskvot.</string>
+  <string name="errorSubmittingFiles">Ett fel inträffade när du lämnade in dina filer. Försök igen.</string>
+  <string name="errorLoadingFiles">Ett fel inträffade när din fil laddades. Kontrollera din internetanslutning och försök igen.</string>
+  <string name="filesUploadedSuccessfully">Filerna laddades upp.</string>
+  <string name="filesSubmittedSuccessfully">Filerna har skickats in.</string>
+  <string name="messageSentSuccessfully">Meddelandet skickades.</string>
+  <string name="shareWithCanvas">Andra appar kan dela filer med Canvas! Titta efter ikonen nedan i appen och peka på Canvas.</string>
+  <string name="shareWithCanvas2">Det kommer att öppna den här appen. Välj sedan vilken kurs och uppgift som du vill lämna in den här filen till.</string>
+  <string name="contentDescriptionSocialShare">Dela ikon</string>
+  <string name="submitAssignment">Skicka in uppgift</string>
+  <string name="assignmentHeader">Uppgift:</string>
+  <string name="submittingAssignment">Skickar in uppgift...</string>
+  <string name="conversations">Konversationer</string>
+  <string name="inbox">Inkorg</string>
+  <string name="divider">Avdelare</string>
+  <string name="legal">Juridisk information</string>
+  <string name="completeHomework">GÖR FÄRDIGT dina hemuppgifter</string>
+  <string name="takeExam">Gör ett prov</string>
+  <string name="fileIcon">Fil-Ikon</string>
+  <string name="uploadingFileNum" formatted="false">Laddar upp %d av %d</string>
+  <string name="fileLocked" formatted="false">%s har låsts.</string>
+  <string name="filePermissionGranted">Filerna är nu redo att laddas ned, försök igen.</string>
+  <string name="filePermissionDenied">Filerna kan inte laddas ned utan tillstånd.</string>
+  <!--Errors-->
+  <string name="errorOccurred">Ett oväntat fel inträffade</string>
+  <string name="serverError">Ett serverfel inträffade</string>
+  <string name="unauthorized">Du har inte tillstånd att komma åt det här. Antingen har du inte behörighet eller så har du inte åtkomst ännu (ifall kursen inte har startat)</string>
+  <string name="fileNoLongerExists">Filen existerar inte längre</string>
+  <string name="invalidAccessToken">Din session har gått ut. Logga in igen för att starta en ny session.</string>
+  <string name="uploadingFromSourceFailed">Uppladdning av fil från den här källan kunde inte slutföras.</string>
+  <string name="errorGettingPhoto">Ett fel inträffade när fotot hämtades. Försök igen.</string>
+  <string name="fileUploadNotSupported">Du kan inte ladda upp filer till den valda uppgiften.</string>
+  <string name="noCourseSelected">Välj en kurs</string>
+  <string name="selectCourse">Välj en kurs</string>
+  <string name="selectAssignment">Välj en uppgift</string>
+  <string name="loadingAssignments">Laddar uppgifter...</string>
+  <string name="noAssignmentSelected">Välj en uppgift</string>
+  <string name="noAssignmentsWithFileUpload">Den här kursen har inga uppgifter som tillåter filuppladdningar.</string>
+  <string name="teacherNotAllowedFileSubmission">Som lärare kan du inte skicka filer</string>
+  <string name="noFilesUploaded">Du har inte valt några filer.</string>
+  <string name="oneOrMoreExtensionNotAllowed">En eller flera filer har ett filnamnstillägg som inte är tillåtet.</string>
+  <string name="extensionNotAllowed">Den valda filtypen är inte tillåten.</string>
+  <string name="allowedExtensions">Tillåtna filnamnstillägg:</string>
+  <!--Media Task Loader-->
+  <string name="noDataConnection">Kontrollera din dataanslutning och försök igen.</string>
+  <string name="noApps">Din enhet har ingen applikation installerad som kan hantera den här filen.</string>
+  <string name="noAppsShort">Kan inte öppnas</string>
+  <string name="unexpectedErrorOpeningFile">Det oväntat fel inträffade när den här filen öppnades.</string>
+  <string name="unexpectedErrorDownloadingFile">Det oväntat fel inträffade när filen laddades ner.</string>
+  <string name="done">Klart</string>
+  <!--Tutorial Messages-->
+  <string name="tutorial_tipColorPickerTitle">Välj en färg för Kursen</string>
+  <string name="tutorial_tipColorPickerMessage">Du kan välja bland många olika färger för att anpassa dina kurser.</string>
+  <string name="tutorial_tipCourseGradesTitle">Snabbtitt på betyg</string>
+  <string name="tutorial_tipCourseGradesMessage">Hoppa till betyg genom att klicka på kursbetyg.</string>
+  <string name="tutorial_tipLandingPageTitle">Välj en startsida</string>
+  <string name="tutorial_tipLandingPageMessage">Genom att välja startsida kommer Canvas att ladda den sidan automatiskt när appen startar.</string>
+  <string name="tutorial_tipLockSlideTitle">Lås eller lås upp skärmen</string>
+  <string name="tutorial_tipLockSlideMessage">Låsning av skärmen låter dig skrolla på skärmen utan att öppna navigationsmenyn.</string>
+  <string name="tutorial_tipHideStudentNames">Dölj namnen under betygsättningen</string>
+  <string name="tutorial_tipHideStudentNamesMessage">Undvik partiskhet genom att dölja elevernas namn.</string>
+  <string name="tutorial_tipMyCoursesTitle">Mina Kurser</string>
+  <string name="tutorial_tipMyCoursesMessage">Växla mellan \"Min Kurs\" och \"Alla kurser\" på ett ögonblick!</string>
+  <string name="tutorial_tipSwitchUsers">Växla användare</string>
+  <string name="tutorial_tipSwitchUsersMessage">Växla och lägg till användare enkelt.</string>
+  <string name="tutorial_tipViewProfile">Din Profil</string>
+  <string name="tutorial_tipViewProfileMessage">Visa och ändra din profils avatar eller bakgrund. Du kan också se dina personliga filer.</string>
+  <string name="tutorial_tipNotificationPreferences">Inställning för aviseringar</string>
+  <string name="tutorial_tipNotificationPreferencesMessage">Filtrera dina preferenser och markera rutorna för att aktivera eller inaktivera en viss typ meddelanden.</string>
+  <string name="tutorial_tipNavigationShortcuts">Växla snabbt mellan kurser</string>
+  <string name="tutorial_tipNavigationShortcutsMessage">Växla mellan dina favoritkurser.</string>
+  <!--Permissions-->
+  <string name="permissionDenied">Du måste först få tillstånd innan du kan använda den här funktionen.</string>
+  <string name="noConnection">Ingen anslutning</string>
+</resources>

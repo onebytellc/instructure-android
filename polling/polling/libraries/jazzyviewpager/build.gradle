@@ -1,0 +1,33 @@
+repositories {
+	mavenCentral()
+	jcenter()
+	maven { url "https://jitpack.io" }
+}
+
+buildscript {
+	repositories {
+		mavenCentral()
+		jcenter()
+		maven { url "https://jitpack.io" }
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:2.2.2'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+dependencies {
+	compile 'com.android.support:support-v13:23.2.0'
+	compile 'com.nineoldandroids:library:2.4.0'
+}
+
+android {
+	compileSdkVersion 23
+	buildToolsVersion '23.0.3'
+
+	defaultConfig {
+		minSdkVersion 17
+		targetSdkVersion 23
+	}
+}

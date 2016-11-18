@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/textfield_default_holo_light" />
+	<item android:state_window_focused="false" android:state_enabled="false" android:drawable="@drawable/textfield_disabled_holo_dark" />
+	<item android:state_enabled="true" android:state_focused="true" android:drawable="@drawable/textfield_activated_holo_dark" />
+	<item android:state_enabled="true" android:state_activated="true" android:drawable="@drawable/textfield_focused_holo_dark" />
+	<item android:state_enabled="true" android:drawable="@drawable/textfield_default_holo_light" />
+	<item android:state_focused="true" android:drawable="@drawable/textfield_disabled_focused_holo_dark" />
+	<item android:drawable="@drawable/textfield_disabled_holo_dark" />
+</selector>

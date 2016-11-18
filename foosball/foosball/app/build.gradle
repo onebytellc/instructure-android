@@ -1,0 +1,117 @@
+/*
+ * Copyright (C) 2016 - present Instructure, Inc.
+ *
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'realm-android'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.instructure.androidfoosball"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField "String", "FIREBASE_USERNAME", "\"$firebase_tab_username\""
+        buildConfigField "String", "FIREBASE_PASSWORD", "\"$firebase_tab_password\""
+        buildConfigField "String", "FIREBASE_SERVER_KEY", "\"$firebase_serverkey\""
+        buildConfigField "String", "FIREBASE_STORAGE_BASE_URL", "\"$firebase_storage_base_url\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    kapt {
+        generateStubs = true
+    }
+
+    productFlavors {
+        phone {
+            applicationId "com.instructure.androidfoosball"
+            versionName "1.0-phone"
+        }
+        tablet {
+            applicationId "com.instructure.androidfoosball.tablet"
+            versionName "1.0-tablet"
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:percent:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.0.1'
+    // Dependency for Google Sign-In
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
+    compile 'com.google.firebase:firebase-core:9.6.1'
+    compile 'com.google.firebase:firebase-auth:9.6.1'
+    compile 'com.google.firebase:firebase-database:9.6.1'
+    compile 'com.google.firebase:firebase-storage:9.6.1'
+    compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile 'com.firebaseui:firebase-ui-database:0.6.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.afollestad.material-dialogs:core:0.8.6.2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    compile 'org.jetbrains.anko:anko-sdk15:0.9'
+    compile 'io.reactivex:rxjava:1.0.16'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':wearutils')
+    wearApp project(':wear')
+}
+
+repositories {
+    jcenter()
+    mavenLocal()
+    maven { url "https://jitpack.io" }
+}
+
+apply plugin: 'com.google.gms.google-services'
+

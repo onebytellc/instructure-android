@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (C) 2016 - present Instructure, Inc.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  ~
+  -->
+
+<resources>
+  <string name="app_name">InnloggingsAPI</string>
+  <string name="hello_world">Hallo verden!</string>
+  <string name="action_settings">Innstillinger</string>
+  <string name="mobileVerifyGeneral">Denne appen er ikke godkjent for bruk</string>
+  <string name="mobileVerifyDomainUnauthorized">Serveren du gikk inn på er ikke godkjent for denne appen.</string>
+  <string name="mobileVerifyUserAgentUnauthorized">Brukeragenten for denne appen er uautorisert.</string>
+  <string name="mobileVerifyUnknownError">Vi var ikke i stand til å verifisere serveren som skulle brukes med denne appen</string>
+  <string name="unknownDevice">UkjentEnhet</string>
+  <string name="errorOccurred">En uventet feil oppstod</string>
+  <string name="pageNotFound">Side ikke funnet</string>
+  <string name="okay">Ok</string>
+  <string name="confirm">Bekrefte</string>
+  <string name="cancel">Avbryt</string>
+  <string name="help">Hjelp</string>
+  <string name="enterURL">Skriv inn din Canvas URL:</string>
+  <string name="signIntoCanvasNetwork">Prøve å logge på Canvas-nettverket?</string>
+  <string name="remove">Fjerne</string>
+  <string name="exampleURLSimple">myschool.instructure.com</string>
+  <!--Multiple User Sign in-->
+  <string name="removeUser">Fjerne denne brukeren?</string>
+  <string name="removedForever">Du må logge inn på denne brukeren på nytt for å få tilgang til innholdet deres.</string>
+  <string name="logout">Logg ut</string>
+  <!--Logout Warning Dialog-->
+  <string name="logout_no">Nei</string>
+  <string name="logout_yes">Ja</string>
+  <string name="logout_warning">Er du sikker på at du vil logge  ut?</string>
+  <!--Content Descriptions-->
+  <string name="canvasLogo">Canvas-logo</string>
+  <string name="canvasLoginOn">Canvas_Innlogging: PÅ</string>
+  <string name="canvasLoginOff">Canvas_Innlogging: AV</string>
+  <string name="siteAdminLogin">Nettstedets admin-innlogging: PÅ</string>
+  <string name="username">Brukernavn</string>
+  <string name="password">Passord</string>
+  <string name="authenticationRequired">Godkjenning kreves</string>
+  <string name="invalidEmailPassword">Ugyldig epost eller passord</string>
+  <string name="login">Innlogging</string>
+  <!--Smart Login-->
+  <string name="loginNearYou">Nær deg</string>
+  <string name="loginCanvasNetwork">Canvas-nettverk</string>
+  <string name="loginRightBehindYou">Rett bak deg</string>
+  <string name="loginMiles">%1$s mil unna</string>
+  <string name="loginCanvasHelp">Ser du ikke skolen din? Skriv inn skolens URL eller tappe her for hjelp.</string>
+  <string name="loginCanvasHelpWithUser">Skriv in skolens URL eller tappe her for hjelp.</string>
+  <string name="loginHint">Finn din skole eller distrikt</string>
+  <!--Rating Dialog-->
+  <string name="howAreWeDoing">Hvordan klarer vi oss?</string>
+  <string name="rateUs">Hvordan ville du vurdert oss?</string>
+  <string name="doBetter">Hva kan vi gjøre bedre</string>
+  <string name="sendFeedback">Send tilbakemelding</string>
+  <string name="suggestions">Forslag for Android</string>
+  <string name="domain">Domene</string>
+  <string name="versionNum">Versjon</string>
+  <string name="userId">Bruker-ID</string>
+  <string name="email">E-post</string>
+  <string name="mobileSupportEmailAddress">mobilesupport@instructure.com</string>
+  <string name="supportEmailAddress">support@instructure.com</string>
+  <string name="dontShowAgain">Ikke vis igjen</string>
+  <string name="installDate">Installasjonsdato:</string>
+  <!--Zendesk Dialog-->
+  <string name="zendesk_reportAProblem">Rapporter et problem</string>
+  <string name="zendesk_subject">Emne</string>
+  <string name="zendesk_description">Beskrivelse</string>
+  <string name="zendesk_writeSomething">Skriv noe...</string>
+  <string name="zendesk_send">Send</string>
+  <string name="zendesk_feedbackThankyou">Takk for at du rapporterte ditt problem til vårt support-team. Du vil motta bekreftelse og oppdateringer via e-post.</string>
+  <string name="zendesk_severityText">Hvordan påvirker dette deg?</string>
+  <string name="zendesk_casualQuestion">Bare et tilfeldig spørsmål, kommentar, idé eller forslag...</string>
+  <string name="zendesk_casualQuestion_tag">bare_en_kommentar</string>
+  <string name="zendesk_needHelp">Jeg trenger litt hjelp men det haster ikke.</string>
+  <string name="zendesk_needHelp_tag">haster_ikke</string>
+  <string name="zendesk_somethingsBroken">Noe er ødelagt men jeg kan jobbe rundt problemet for å få gjort det jeg trenger å gjøre.</string>
+  <string name="zendesk_somethingsBroken_tag">løsning_mulig</string>
+  <string name="zendesk_cantGetThingsDone">Jeg får gjort noenting før jeg hører i fra deg.</string>
+  <string name="zendesk_cantGetThingsDone_tag">blokkerer_hva_jeg_trenger_å_gjøre</string>
+  <string name="zendesk_extremelyCritical">EKSTREMT KRITISK NØDSITUASJON!!</string>
+  <string name="zendesk_extremelyCritical_tag">ekstremt_kritisk_nødsituasjon</string>
+  <string name="zendesk_emailAddress">E-postadresse</string>
+  <string name="zendesk_enterEmail">Skriv inn e-postadressen din...</string>
+  <string name="zendesk_unknown">Ukjent</string>
+  <!--Distance Strings-->
+  <string name="lessThanOne">&lt; 1 mile (1.6 km)</string>
+  <string name="oneMile">1 mile (1.6 km)</string>
+  <string name="miles">miles</string>
+  <string name="kilometers">km</string>
+  <!--String for submitting tickets-->
+  <string name="device">Enhet</string>
+  <string name="osVersion">OS-versjon</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        style="@style/PollingAnswerTheme"
+        android:id="@+id/poll_question"
+        android:layout_width="match_parent"
+        android:padding="@dimen/editTextPadding"
+        android:gravity="center_horizontal"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/swipeRefreshLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_container"
+        android:layout_below="@+id/poll_question">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:padding="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            style="@style/ButtonBarCanvasPollingTheme"
+            android:id="@+id/submit_poll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submitPoll"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

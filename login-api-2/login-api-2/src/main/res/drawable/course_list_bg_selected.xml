@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack
+    <item>
+        <shape>
+            <padding android:right="1dp" />
+            <solid android:color="#10000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp" />
+            <solid android:color="#20000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp" />
+            <solid android:color="#30000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp"/>
+            <solid android:color="#50000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp"/>
+            <solid android:color="#60000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp" />
+            <solid android:color="#70000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp"/>
+            <solid android:color="#80000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1dp"/>
+            <solid android:color="#90000000" />
+        </shape>
+    </item>-->
+
+    <!-- Background -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/course_list_bg">
+            <stroke android:width="2dp" android:color="@color/canvasBackgroundDark" />
+            <solid android:color="@color/canvasBackgroundMediumDark" />
+        </shape>
+    </item>
+</layer-list>

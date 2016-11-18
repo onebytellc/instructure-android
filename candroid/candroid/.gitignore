@@ -1,0 +1,72 @@
+# Strings #
+candroid/src/main/res/values/com_crashlytics_export_strings.xml
+candroid/crashlytics.properties
+
+# Private data
+candroid/fabric.properties
+candroid/google-services.json
+candroid/src/main/res/xml/analytics.xml
+candroid/src/main/res/values/private_strings.xml
+debug.keystore
+debug.properties
+private.properties
+
+# built application files #
+*.apk
+*.ap_
+
+# files for the dex VM #
+*.dex
+
+# Java class files #
+*.class
+
+# generated files #
+bin
+gen
+target
+
+# Local configuration file (sdk path, etc) #
+local.properties
+
+# Windows thumbnail db #
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files #
+.classpath
+.project
+
+# Android Studio #
+.idea
+*.iml
+build
+*.iws
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Project Files #
+.gitconfig
+
+# Gradle Files #
+gradle.properties
+.gradle
+
+release_build/.gradle/1.8/taskArtifacts
+
+# Dropbox stuff that's relative to EVERYONE's machine. #
+release_build/dropbox/examples/account-info/target/runtime-classpath
+release_build/dropbox/examples/authorize/target/runtime-classpath
+release_build/dropbox/examples/upload-file/target/runtime-classpath
+release_build/dropbox/examples/web-file-browser/target/runtime-classpath
+release_build/dropbox/target/dropbox-core-sdk-0-SNAPSHOT.jar
+release_build/dropbox/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+release_build/dropbox/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+
+# Generated Licenses HTML
+candroid/src/main/assets/licenses.html

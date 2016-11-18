@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present Instructure, Inc.
+  ~
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|end"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaderboard"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/leaderboardWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/leaderboardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="@string/individual"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/leaderboardDivider"
+                android:layout_width="240dp"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:background="#CCC"
+                android:layout_below="@id/leaderboardText"/>
+
+            <TextView
+                android:id="@+id/leaderboardSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/leaderboard_subtitle"
+                android:layout_below="@id/leaderboardDivider"
+                tools:text="Players Need at least 9 games to rank" />
+
+            <View
+                android:id="@+id/leaderboardSelected"
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/teamLeaderboardWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+            <TextView
+                android:id="@+id/teamLeaderboardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:text="@string/team_leaderboard"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"/>
+
+            <View
+                android:id="@+id/teamLeaderboardDivider"
+                android:layout_width="240dp"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#CCC"
+                android:layout_below="@id/teamLeaderboardText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"/>
+
+            <TextView
+                android:id="@+id/teamLeaderboardSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/leaderboard_subtitle"
+                android:layout_below="@id/teamLeaderboardDivider"
+                tools:text="Players Need at least 9 games to rank"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"/>
+            <View
+                android:id="@+id/teamLeaderboardSelected"
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/foosRankWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+            <TextView
+                android:id="@+id/foosRankText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="@string/foos_rank"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/foosRankDivider"
+                android:layout_width="240dp"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:background="#CCC"
+                android:layout_below="@id/foosRankText"/>
+
+            <TextView
+                android:id="@+id/foosRankSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/foos_rank_description"
+                android:layout_below="@id/foosRankDivider" />
+
+            <View
+                android:id="@+id/foosRankSelected"
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:elevation="16dp"
+        android:overScrollMode="never"
+        android:paddingBottom="48dp"
+        android:paddingTop="36dp"
+        android:scrollbars="none"
+        app:elevation="16dp" />
+</LinearLayout>

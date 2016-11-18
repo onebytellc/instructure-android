@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fromCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderless_item_selector"
+            android:drawableTop="@drawable/ic_cv_camera"
+            android:text="@string/fromCamera"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            style="@style/TextStyle.Secondary.Dark"/>
+
+        <Button
+            android:id="@+id/fromPhotoGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderless_item_selector"
+            android:drawableTop="@drawable/ic_cv_image"
+            android:text="@string/fromGallery"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            style="@style/TextStyle.Secondary.Dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fromDevice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderless_item_selector"
+            android:drawableTop="@drawable/ic_cv_folder"
+            android:text="@string/fromDevice"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            style="@style/TextStyle.Secondary.Dark"/>
+
+        <Button
+            android:id="@+id/fromOtherApplication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderless_item_selector"
+            android:drawableTop="@drawable/ic_cv_share"
+            android:text="@string/fromOtherApplication"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            style="@style/TextStyle.Secondary.Dark"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+include ':app'
+include ':canvas-api'
+include ':canvas-api-2'
+include ':blueprint'
+include ':pandautils'
+include ':login-api'
+include ':recyclerview'
+include ":libraries:croutonlibrary"
+include ":libraries:jazzyviewpager"
+
+project(':canvas-api').projectDir = new File(rootProject.projectDir, '/../canvas-api')
+project(':canvas-api-2').projectDir = new File(rootProject.projectDir, '/../canvas-api-2/canvasapi')
+project(':blueprint').projectDir = new File(rootProject.projectDir, '/../blueprint')
+project(':pandautils').projectDir = new File(rootProject.projectDir, '/../pandautils')
+project(':login-api').projectDir = new File(rootProject.projectDir, '/../login-api')
+project(':recyclerview').projectDir = new File(rootProject.projectDir, '/../recyclerview')

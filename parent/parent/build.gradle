@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    apply from: '../private-data/merge-private-data.gradle'
+    mergePrivateData "parent", true
+
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.cookpad.android.licensetools:license-tools-plugin:0.18.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id "org.standardout.versioneye" version "1.4.0"
+}
+
+versioneye {
+    includeSubProjects = true
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 24
+    buildToolsVersion = "24.0.2"
+
+    targetSdkVersion = 24
+    minSdkVersion = 17
+
+    versionCode = 1
+    versionName = '1.0d'
+
+    supportLibraryVersion = '24.2.1'
+    googlePlayServicesVersion = '9.6.0'
+
+    supportDependencies = [
+            design : "com.android.support:design:${supportLibraryVersion}",
+            recyclerView : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            appCompat : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            supportAnnotation: "com.android.support:support-annotations:${supportLibraryVersion}",
+            cardView: "com.android.support:cardview-v7:${supportLibraryVersion}",
+            gpsWearable: "com.google.android.gms:play-services-wearable:${googlePlayServicesVersion}",
+            supportLibV13: "com.android.support:support-v13:${supportLibraryVersion}",
+            percent: "com.android.support:percent:${supportLibraryVersion}",
+    ]
+}

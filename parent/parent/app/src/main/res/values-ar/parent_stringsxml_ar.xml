@@ -1,0 +1,164 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="action_settings">الإعدادات</string>
+    <string name="canvasLogo">شعار Canvas</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="parent_email">البريد الإلكتروني لولي الأمر</string>
+    <string name="confirmPassword">تأكيد كلمة المرور</string>
+    <string name="firstName">الاسم الأول</string>
+    <string name="lastName">اسم العائلة</string>
+    <string name="password">كلمة المرور</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="createAccount">إنشاء حساب</string>
+    <string name="forgotPassword">نسيت كلمة المرور</string>
+    <string name="requestPassword">طلب كلمة المرور</string>
+    <string name="fullName">الاسم الكامل</string>
+    <string name="invalidEmail">عنوان البريد الإلكتروني غير صالح. أعد المحاولة.</string>
+    <string name="next">التالي</string>
+    <string name="createAccountMessage">سيتم إرسال بريد إلكتروني إلى عنوان البريد الإلكتروني الذي قدمته لإكمال عملية التسجيل.</string>
+    <string name="accountCreationSuccess">تم إنشاء الحساب بنجاح. يرجى مراجعة بريدك الإلكتروني لإكمال عملية التسجيل.</string>
+    <string name="errorOccurred">حدث خطأ غير متوقع. يرجى إعادة المحاولة.</string>
+    <string name="unknownDevice">جهاز غير معروف</string>
+    <string name="addStudent">إضافة طالب</string>
+    <string name="school">مدرسة</string>
+    <string name="finish">إنهاء</string>
+    <string name="close">إغلاق</string>
+    <string name="noStudents">لا يوجد أي طالب. لإضافة طالب اضغط على النقاط الثلاث في القائمة أدناه.</string>
+    <string name="noStudentsView">لا يوجد طلبة مرتبطين بحسابك.</string>
+    <string name="noCourses">لا توجد مساقات لهذا الطالب.</string>
+    <string name="noAlerts">لا توجد أي تنبيهات لهذا الطالب لعرضها.</string>
+    <string name="noItemsToDisplayShort">لا توجد عناصر</string>
+    <string name="emailsSentTo">تم إرسال رسائل البريد الإلكتروني إلى:</string>
+    <string name="logged_in_as">تم تسجيل الدخول كـ:</string>
+    <string name="notifyWhen">تنبيهي عندما</string>
+    <string name="gradeAbove">درجة المساق أعلى من</string>
+    <string name="gradeBelow">درجة المساق أدنى من</string>
+    <string name="assignmentMissing">مهمة غير منجزة</string>
+    <string name="teacherAnnouncements">إعلانات المساق</string>
+    <string name="institutionAnnouncements">إعلانات المؤسسة</string>
+    <string name="assignmentGradeAbove">درجة المهمة أعلى من</string>
+    <string name="assignmentGradeBelow">درجة المهمة أدنى من</string>
+    <string name="never">أبدًا</string>
+    <string name="save">حفظ</string>
+    <string name="enterThreshold">إدخال النسبة المئوية</string>
+    <string name="setGradeValueMessage">قيمة الدرجة الي تريد أن يتم إبلاغك عندها</string>
+    <string name="removeStudent">إزالة الطالب</string>
+    <string name="removingStudent">إزالة طالب</string>
+    <string name="studentRemoved">تمت إزالة الطالب بنجاح</string>
+    <string name="studentAdded">تمت إضافة الطالب بنجاح</string>
+    <string name="courses">المساقات</string>
+    <string name="week">أسبوع</string>
+    <string name="alerts">تنبيهات</string>
+    <string name="alert">تنبيه</string>
+    <string name="weekEmptyView">لا توجد أي مهام أو أحداث هذا الأسبوع!</string>
+    <string name="toolbar_close">إغلاق شريط الأدوات</string>
+    <string name="syllabus">المناهج</string>
+    <string name="emptySyllabus">لا توجد مناهج في هذا المساق.</string>
+    <string name="noLocation">لم يتم تحديد أي موقع</string>
+    <string name="previousAlerts">التنبيهات السابقة</string>
+    <string name="currentAlerts">التنبيهات الحالية</string>
+    <string name="badDomainError">مجال غير صالح. أعد المحاولة.</string>
+    <string name="unauthorized">أنت غير مخول للوصول إلى هذه المعلومات.</string>
+    <string name="revokedTokenErrorContent">أنت غير مخول للوصول إلى معلومات %1$s. يمكنك إعادة تخويل طالبك من خلال قائمة الإعدادات.</string>
+    <string name="revokedTokenErrorTitle">تم إبطال رمز الوصول المميز</string>
+    <string name="featureFlagDisabledError">لم تقم هذه المؤسسة بتمكين الوصول إلى تطبيق Canvas للأولياء على الأجهزة المحمولة.</string>
+
+    <!-- Help strings -->
+    <string name="askInstructor">اطرح سؤال على معلمك</string>
+    <string name="askInstructorDetails">يتم إرسال الأسئلة إلى معلمك</string>
+    <string name="searchGuides">البحث في أدلة Canvas</string>
+    <string name="canvasGuides">أدلة Canvas</string>
+    <string name="searchGuidesDetails">العثور على أجوبة الأسئلة الشائعة</string>
+    <string name="reportProblem">الإبلاغ عن مشكلة</string>
+    <string name="reportProblemDetails">أخبرنا إن لم يعمل التطبيق بشكل صحيح</string>
+    <string name="requestFeature">طلب ميزة</string>
+    <string name="requestFeatureDetails">هل لديك فكرة لتحسين التطبيق؟</string>
+    <string name="shareYourLove">شارك إعجابك بالتطبيق</string>
+    <string name="shareYourLoveDetails">حدثنا عن الأشياء التي تفضلها في التطبيق</string>
+    <string name="sendFeedback">إرسال تعليقات</string>
+    <string name="sendMail">إرسال بريد إلكتروني&#8230;</string>
+    <string name="mobileSupportEmailAddress">mobilesupport@instructure.com</string>
+    <string name="supportEmailAddress">support@instructure.com</string>
+    <string name="help_domain">المجال:</string>
+    <string name="help_versionNum">الإصدار:</string>
+    <string name="help_userId">معرف المستخدم:</string>
+    <string name="help_email">البريد الإلكتروني:</string>
+    <string name="help_locale">الإعدادات المحلية</string>
+    <string name="installDate">تاريخ التثبيت:</string>
+    <string name="icon">أيقونة</string>
+    <string name="due">موعد الاستحقاق:</string>
+    <string name="no_due_date">لا يوجد موعد استحقاق</string>
+    <string name="tapToSet">اضغط للتعيين</string>
+    <string name="alarmNotSet">تعذر تعيين التنبيه. أعد المحاولة.</string>
+    <string name="could_not_route_course">تعذر العثور على التسجيل في المساق.</string>
+    <string name="could_not_route_assignment">تعذر العثور على المساق.</string>
+    <string name="email_already_exists">يوجد بالفعل مستخدم بعنوان البريد الإلكتروني هذا.</string>
+    <string name="password_reset_success">سيتم إرسال بريد إلكتروني يتضمن التعليمات لإعادة تعيين كلمة المرور.</string>
+    <string name="password_reset_no_user">لم يتم العثور على أي مستخدم بعنوان البريد الإلكتروني هذا.</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="location">الموقع</string>
+    <string name="time">الوقت</string>
+    <string name="student_avatar">أفاتار الطالب</string>
+    <string name="previous">السابق</string>
+    <string name="empty_view">ما يُعرض عندما لا يتم العثور على أي محتوى</string>
+    <string name="tab_icon">أيقونة فوق علامة التبويب</string>
+    <string name="add_student_icon">أيقونة لإضافة طالب</string>
+    <string name="canvas_logo">شعار Canvas</string>
+    <string name="course_threshold_grade_above_invalid">يجب أن تكون هذه العتبة أعلى من أدنى عتبة للمساق.</string>
+    <string name="course_threshold_grade_below_invalid">يجب أن تكون هذه العتبة أدنى من أعلى عتبة للمساق.</string>
+    <string name="assignment_threshold_grade_above_invalid">يجب أن تكون هذه العتبة أعلى من أدنى عتبة للمهمة.</string>
+    <string name="assignment_threshold_grade_below_invalid">يجب أن تكون هذه العتبة أدنى من أعلى عتبة للمهمة.</string>
+    <string name="set_reminder">تعيين تذكير</string>
+    <string name="enter_student_institution">إدخال مؤسسة الطالب</string>
+    <string name="enter_student_login">إدخال معرّف الطالب وكلمة مروره</string>
+    <string name="access_not_enabled">لم تقم هذه المؤسسة بتمكين الوصول إلى تطبيق Canvas للأولياء على الأجهزة المحمولة.</string>
+    <string name="dismiss">رفض</string>
+    <string name="invalid_username_password">تركيبة البريد الإلكتروني وكلمة المرور غير صالحة.</string>
+    <string name="opening">فتح&#8230;</string>
+    <string name="locked_assignment_desc">هذه المهمة جزء من الوحدة %s ولم يتم إلغاء تأمينها بعد.</string>
+    <string name="locked_assignment_desc_line2">قم بزيارة صفحة وحدات المساق عبر متصفح للحصول على معلومات حول كيفية إلغاء تأمين المحتوى.</string>
+    <string name="locked_assignment_not_module">هذه المهمة مؤمّنة.</string>
+    <string name="no_description">لا يوجد أي وصف لهذه المهمة</string>
+    <string name="cannot_view_file">لا يمكن عرض هذا الملف في التطبيق. يرجى فتحه في المتصفح.</string>
+    <string name="calendar_event">حدث التقويم</string>
+    <string name="set_reminder_toggle">تعيين تبديل التذكير</string>
+    <string name="or">أو</string>
+    <string name="canvas_login_text">قم بتسجيل الدخول في Canvas</string>
+
+    <!-- Feature Request -->
+    <string name="featureSubject">أفكار لتطبيق Canvas للأولياء [Android]</string>
+    <string name="understandRequest">ستساعدنا المعلومات التالية على فهم فكرتك بشكل أفضل:</string>
+
+    <!-- Distance Strings -->
+    <string name="lessThanOne">&lt; 1 ميل (1.6 كم)</string>
+    <string name="oneMile">1 ميل (1.6 كم)</string>
+    <string name="miles">أميال</string>
+    <string name="kilometers">كم</string>
+
+    <string name="grade">الدرجة:</string>
+    <string name="notGraded">لم يتم التقييم بعد</string>
+    <string name="missing">غير منجزة</string>
+    <string name="submitted">تم الإرسال</string>
+    <string name="in_class">في الصف</string>
+    <string name="excused">غير إجبارية</string>
+    <string name="late">فيما بعد</string>
+    <string name="greaterThan9">9+</string>
+
+    <string name="onlyCanvasObservers">يتمكن مراقبو Canvas  فقط من المصادقة في Canvas Parent.</string>
+</resources>

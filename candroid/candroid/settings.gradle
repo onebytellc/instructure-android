@@ -1,0 +1,21 @@
+include ':candroid'
+include ':wearable'
+include ':canvas-api'
+include ':blueprint'
+include ':login-api'
+include ':pandautils'
+include ':recyclerview'
+include ':canvas-api-2'
+include ':libraries:caldroid'
+include ':floating_action_button_library'
+include ':libraries:chips'
+include ':espresso'
+
+project(':espresso').projectDir = new File(rootProject.projectDir, '/../espresso')
+project(':canvas-api').projectDir = new File(rootProject.projectDir, '/../canvas-api')
+project(':login-api').projectDir = new File(rootProject.projectDir, '/../login-api')
+project(':recyclerview').projectDir = new File(rootProject.projectDir, '/../recyclerview')
+project(':pandautils').projectDir = new File(rootProject.projectDir, '/../pandautils')
+project(':canvas-api-2').projectDir = new File(rootProject.projectDir, '/../canvas-api-2/canvasapi')
+project(':blueprint').projectDir = new File(rootProject.projectDir, '/../blueprint')
+project(':floating_action_button_library').projectDir = new File(rootProject.projectDir, '/../pandautils/libs/floating_action_button_library')

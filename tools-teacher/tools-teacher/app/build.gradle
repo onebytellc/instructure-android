@@ -1,0 +1,102 @@
+/*
+ * Copyright (C) 2016 - present  Instructure, Inc.
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, version 3 of the License.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs '../aars'
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+        // https://github.com/JakeWharton/sdk-manager-plugin
+        classpath 'com.github.JakeWharton:sdk-manager-plugin:e05218601b1274ea0721e13b33a426f641156f69'
+    }
+}
+apply plugin: 'android-sdk-manager'
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.cookpad.android.licensetools'
+
+
+android {
+
+    defaultConfig {
+        compileSdkVersion rootProject.ext.compileSdkVersion
+        buildToolsVersion rootProject.ext.buildToolsVersion
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        applicationId "com.instructure.teacheraid"
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        multiDexEnabled true
+
+        /* Add private data */
+        addManifestPlaceholders([
+                crashlyticsApiKey:"$crashlyticsApiKey"
+        ])
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':canvas-api')
+    compile project(':login-api')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.afollestad.material-dialogs:core:0.8.5.6@aar'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.1@aar') {
+        transitive = true;
+    }
+    compile 'de.hdodenhof:circleimageview:1.2.2'
+}
+
+/* Check licenses.yml, generate assets/licenses.html during build */
+afterEvaluate {
+  android.applicationVariants.all { variant ->
+    variant.mergeAssets.dependsOn(generateLicensePage)
+  }
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ask_instructor"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/borderless_item_selector">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Secondary.Dark"
+                android:text="@string/askInstructor"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Tertiary"
+                android:textStyle="italic"
+                android:text="@string/askInstructorDetails"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_guides"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/ask_instructor"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/borderless_item_selector">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Secondary.Dark"
+                android:text="@string/searchGuides"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Tertiary"
+                android:textStyle="italic"
+                android:text="@string/searchGuidesDetails"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/report_problem"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/search_guides"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/borderless_item_selector">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Secondary.Dark"
+                android:text="@string/reportProblem"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Tertiary"
+                android:textStyle="italic"
+                android:text="@string/reportProblemDetails"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/request_feature"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/report_problem"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/borderless_item_selector">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Secondary.Dark"
+                android:text="@string/requestFeature"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Tertiary"
+                android:textStyle="italic"
+                android:text="@string/requestFeatureDetails"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_love"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/request_feature"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/borderless_item_selector">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Secondary.Dark"
+                android:text="@string/shareYourLove"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TextStyle.Tertiary"
+                android:textStyle="italic"
+                android:text="@string/shareYourLoveDetails"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

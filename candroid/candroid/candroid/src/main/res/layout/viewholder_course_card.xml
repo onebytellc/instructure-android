@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/colorRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/course_card_height"
+        android:minWidth="@dimen/course_card_min_width"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="-2dp"
+        app:cardElevation="@dimen/card_elevation">
+
+        <RelativeLayout
+            android:id="@+id/innerCardWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/course_card_min_width">
+
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_column_header_height"
+                android:background="@drawable/top_rounded_rect"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:gravity="start|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/grid_header_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/courseName"
+                android:background="@drawable/shadow_top_bottom" />
+
+            <com.instructure.pandautils.views.RippleView
+                android:id="@+id/clickItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/courseCode"
+                android:layout_alignParentTop="true"
+                app:rv_alpha="@integer/ripple_alpha"
+                app:rv_centered="false"
+                app:rv_color="@color/white"
+                app:rv_rippleDuration="@integer/ripple_duration_short" />
+
+            <com.instructure.pandautils.views.RippleView
+                android:id="@+id/overflowRipple"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:rv_alpha="@integer/ripple_alpha"
+                app:rv_centered="true"
+                app:rv_color="@color/white"
+                app:rv_rippleDuration="@integer/ripple_duration_short">
+
+                <ImageView
+                    android:id="@+id/overflow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_overflow_white" />
+
+            </com.instructure.pandautils.views.RippleView>
+
+            <ImageView
+                android:id="@+id/pulseOveflow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:padding="4dp"
+                android:src="@drawable/pulse_indicator"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/courseCode"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/courseName"
+                android:layout_toLeftOf="@+id/gradeRipple"
+                android:layout_toStartOf="@+id/gradeRipple"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:textColor="@color/canvasTextMedium"
+                android:textSize="16sp" />
+
+            <com.instructure.pandautils.views.RippleView
+                android:id="@+id/gradeRipple"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:minWidth="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/courseName"
+                app:rv_alpha="@integer/ripple_alpha"
+                app:rv_centered="true"
+                app:rv_color="@color/canvasTextMedium"
+                app:rv_rippleDuration="@integer/ripple_duration_short">
+
+                <TextView
+                    android:id="@+id/courseGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/canvasTextMedium"
+                    android:textSize="@dimen/grid_grade_text_size" />
+
+            </com.instructure.pandautils.views.RippleView>
+
+            <ImageView
+                android:id="@+id/pulseGrade"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/courseName"
+                android:clickable="true"
+                android:padding="4dp"
+                android:src="@drawable/pulse_indicator"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

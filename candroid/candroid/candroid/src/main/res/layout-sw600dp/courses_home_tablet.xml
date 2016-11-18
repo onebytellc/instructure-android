@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/course_background_repeat">
+
+    <com.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/courses_grid"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:columnWidth="@dimen/grid_column_width"
+        android:verticalSpacing="@dimen/grid_horizontal_spacing"
+        android:horizontalSpacing="@dimen/grid_horizontal_spacing"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="none"
+        android:overScrollMode="ifContentScrolls"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/canvasTextMedium"
+        android:textSize="24sp"
+        android:text="@string/no_courses"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

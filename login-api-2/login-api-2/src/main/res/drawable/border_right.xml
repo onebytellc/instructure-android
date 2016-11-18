@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item
+        android:maxLevel="1"
+        android:left="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tablet_divider" />
+        </shape>
+    </item>
+    <item android:maxLevel="2"
+        android:right="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tablet_content_bg" />
+        </shape>
+    </item>
+</layer-list>

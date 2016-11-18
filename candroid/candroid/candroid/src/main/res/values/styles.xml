@@ -1,0 +1,280 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Transparent" parent="CanvasMaterialTheme_Default">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PSPDFKitTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/canvasRed</item>
+        <item name="colorAccent">@color/canvasRed</item>
+        <item name="colorPrimaryDark">@color/canvasRed</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Theme.Kaltura" parent="CanvasMaterialTheme_Default">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="EditTextHoloDark" parent="android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_holo_dark</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="EditTextHoloDarkBlackText" parent="android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_holo_dark</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="EditTextComposeMessage" parent="android:style/Widget.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="CourseColorDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/course_color_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/course_color_dialog_exit</item>
+    </style>
+
+    <style name="FileUploadDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="FileDestinationDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/hs_slide_out_left</item>
+    </style>
+    <!--URL Sign In-->
+    <style name="UrlSignInLogo">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">75dp</item>
+        <item name="android:layout_marginRight">75dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--List Styles-->
+    <style name="ListHeaderStyle.Expandable.Inverse">
+        <item name="android:paddingLeft">48dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListHeaderStyle.Inverse">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!--Text Styles-->
+    <style name="TextStyle.Primary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Primary.SingleLine.Gray">
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Primary.SingleLine.Navigation">
+        <item name="android:textColor">@color/defaultPrimary</item>
+    </style>
+
+    <style name="TextStyle.Primary.CardView">
+        <item name="android:maxLines">2</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">center_vertical|start</item>
+    </style>
+
+    <style name="TextStyle.Secondary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Secondary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Secondary.SingleLine.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Secondary.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Secondary.CardView">
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="TextStyle.Tertiary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.SingleLine.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Grade">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyle.Primary.SingleLine.GradeWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/canvasTextDark</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextStyle.NoGrade">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextStyle.Message">
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.MessageDate">
+        <item name="android:textSize">11sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="CourseNavigationSpinner" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="TermSpinner" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:background">@color/canvasBackgroundOffWhite</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="DetailedMessageContentLinearLayoutOrientation" >
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/card_border_background</item>
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="DetailsDialogAnimationVideo">
+        <item name="android:windowEnterAnimation">@anim/none</item>
+        <item name="android:windowExitAnimation">@anim/none</item>
+    </style>
+
+    <style name="ActionModeStyle" parent="Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/defaultPrimary</item>
+    </style>
+    
+    <style name="EasterEggText">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EasterEggText.Title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="Canvas"/>
+
+    <style name="Canvas.NavDrawerItem">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_height">?android:listPreferredItemHeightSmall</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/listview_states</item>
+    </style>
+
+    <style name="Canvas.NavDrawerText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/navigationTextColor</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Canvas.NavIcon">
+        <item name="android:layout_height">?android:listPreferredItemHeightSmall</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+</resources>

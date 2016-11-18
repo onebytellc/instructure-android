@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:padding="@dimen/viewMargin">
+
+    <com.instructure.androidpolling.app.view.FloatLabelLayout
+        android:id="@+id/questionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel"
+        android:animateLayoutChanges="true">
+
+        <EditText
+            style="@style/TextAppearance.EditText"
+            android:id="@+id/edit_question"
+            android:hint="@string/whatIsYourQuestion"
+            android:background="@drawable/dropshadow_nine_patch"
+            android:inputType="textCapSentences"
+            android:maxLength="255"
+            />
+
+    </com.instructure.androidpolling.app.view.FloatLabelLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/questionLabel"
+        android:layout_above="@+id/button_container"
+        android:padding="@dimen/viewMargin"
+        android:layout_marginBottom="16dp"
+        android:scrollbarStyle="outsideOverlay">
+        <LinearLayout
+            android:id="@+id/answerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:layoutAnimation="@anim/list_layout_controller"
+            />
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            style="@style/ButtonBarCanvasPollingTheme"
+            android:id="@+id/savePoll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_weight="1"
+
+
+            />
+        <Button
+            style="@style/ButtonBarCanvasPollingTheme"
+            android:id="@+id/publishPoll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/publishPoll"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

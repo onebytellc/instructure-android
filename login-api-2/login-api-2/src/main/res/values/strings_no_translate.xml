@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="severity_text_content_desc">severity_text_%1$d</string>
+    <string name="canvas_parent">Canvas Parent</string>
+    <string name="speedgrader">SpeedGrader</string>
+    <string name="polls">Polls</string>
+    <string name="canvas_teacher">Canvas Teacher</string>
+    <string name="canvas">Canvas</string>
+</resources>

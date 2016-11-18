@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/parent_bg_gradient">
+
+    <ImageView
+        android:id="@+id/addStudentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/add_student_icon"
+        android:paddingTop="24dp"
+        android:src="@drawable/add_student"
+        app:layout_marginTopPercent="5%"/>
+
+    <TextView
+        android:id="@+id/noStudentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addStudentIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/large_padding"
+        android:text="@string/noStudentsView"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <com.instructure.loginapi.login.view.HttpAutoCompleteTextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_widthPercent="65%"
+        android:layout_below="@+id/noStudentText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/parent_et_bg"
+        android:hint="@string/enter_student_institution"
+        android:imeOptions="actionGo"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/finish"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/lightgray" />
+
+    <Button
+        android:id="@+id/finish"
+        style="@style/Base.TextAppearance.AppCompat.Button.LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="65%"
+        android:minHeight="48dp"
+        android:layout_below="@id/school"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="65%"
+        android:layout_below="@+id/finish"
+        android:background="@drawable/auto_complete_text_background"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/canvasRowDivider"
+        android:layout_centerHorizontal="true"
+        android:dividerHeight=".5dp"
+        android:layout_above="@+id/log_out"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/logout"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</android.support.percent.PercentRelativeLayout>

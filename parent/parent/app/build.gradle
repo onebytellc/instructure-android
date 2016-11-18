@@ -1,0 +1,183 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply from: 'jacoco.gradle' // ./gradlew testDebugUnitTestCoverage
+apply plugin: 'com.cookpad.android.licensetools'
+/*
+ * Copyright (C) 2016 - present  Instructure, Inc.
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, version 3 of the License.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs '../../espresso/aars'
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        flatDir {
+            dirs '../../espresso/aars'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "com.instructure.parentapp"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 4
+        versionName "1.2.0"
+
+        multiDexEnabled = true
+        testInstrumentationRunner 'com.instructure.espresso.InstructureRunner'
+        testInstrumentationRunnerArguments disableAnalytics: 'true'
+
+        /* Add private data */
+        buildConfigField "String", "LOGIN_CLIENT_ID", "\"loginClientId\""
+        buildConfigField "String", "LOGIN_CLIENT_SECRET", "\"$loginClientSecret\""
+        addManifestPlaceholders([
+                fabricApiKey:"$fabricApiKey"
+        ])
+    }
+
+    productFlavors {
+
+        dev {
+            buildConfigField "boolean", "IS_TESTING", "false"
+            buildConfigField "String", "GAMMA_DOMAIN", "\"\""
+        }
+
+        qa {
+            buildConfigField "boolean", "IS_TESTING", "true"
+            buildConfigField "String", "GAMMA_DOMAIN", "\"https://airwolf-iad-gamma.inscloudgate.net/\""
+        }
+
+        prod {
+            buildConfigField "boolean", "IS_TESTING", "false"
+            buildConfigField "String", "GAMMA_DOMAIN", "\"\""
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "IS_TESTING", "false"
+            buildConfigField "String", "GAMMA_DOMAIN", "\"\""
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'LICENSE.txt'
+        // Required for Espresso.
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize '2g'
+    }
+
+    /*
+    All direct/transitive dependencies shared between your test and production APKs need to be
+    excluded from the test APK! This is necessary because both APKs will contain the same classes. Not
+    excluding these dependencies from your test configuration will result in an dex pre-verifier error
+    at runtime. More info in this tools bug: (https://code.google.com/p/android/issues/detail?id=192497)
+    https://github.com/googlecodelabs/android-testing/blob/49e2cf7584b7aee421630da07350d6e4ca2fe6f7/app/build.gradle#L91
+    */
+    configurations.compile.dependencies.each { compileDependency ->
+        println "Excluding compile dependency: ${compileDependency.getName()}"
+        configurations.androidTestCompile.dependencies.each { androidTestCompileDependency ->
+            configurations.androidTestCompile.exclude module: "${compileDependency.getName()}"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':canvas-api')
+    compile project(':pandautils')
+    releaseCompile project(path: ':login-api-2', configuration: 'release')
+    debugCompile project(path: ':login-api-2', configuration: 'debug')
+    compile project(':recyclerview')
+
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.github.rey5137:material:1.2.2'
+    compile rootProject.ext.supportDependencies.design
+    compile rootProject.ext.supportDependencies.percent
+    compile 'com.android.support:multidex:1.0.1'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.2@aar') {
+        transitive = true
+    }
+
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile project(':espresso')
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.robolectric:robolectric:3.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+}
+
+/*
+ gradle :app:prepareAndroidParentEspressoUnspecifiedLibrary requires
+ espresso/build/outputs/aar/espresso-release.aar to exist. Gradle will not compile aars
+ when using androidTestCompile. Force a compilation by specifying the task dependency.
+ Error:A problem was found with the configuration of task ':app:prepareAndroidParentEspressoUnspecifiedLibrary'.
+ > File '/Users/medwards/code/parent_repos/espresso/build/outputs/aar/espresso-release.aar' specified for property 'bundle' does not exist.
+ http://stackoverflow.com/questions/39704194/androidtestcompile-fails-to-build-aar
+ https://groups.google.com/forum/#!topic/adt-dev/rwRanX8pfX4
+*/
+gradle.projectsEvaluated {
+    tasks.getByPath(":${project.name}:prepareParentEspressoUnspecifiedLibrary").dependsOn tasks.getByPath(":espresso:assembleRelease")
+}
+
+/* Check licenses.yml, generate assets/licenses.html during build */
+afterEvaluate {
+    android.applicationVariants.all { variant ->
+        if(variant.buildType.name == "release") {
+            variant.mergeAssets.dependsOn(generateLicensePage)
+        }
+    }
+}

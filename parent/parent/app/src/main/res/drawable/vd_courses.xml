@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+
+    <group
+            android:translateX="-26.000000"
+            android:translateY="-336.000000">
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M30,346 L28,346 L28,338 L30,338 L30,346 Z M31,336 L27,336 C26.448,336 26,336.448
+26,337 L26,355 C26,355.552 26.448,356 27,356 L31,356 C31.552,356 32,355.552
+32,355 L32,337 C32,336.448 31.552,336 31,336 Z M38,340 L34,340 C33.448,340
+33,340.448 33,341 L33,355 C33,355.552 33.448,356 34,356 L38,356 C38.552,356
+39,355.552 39,355 L39,341 C39,340.448 38.552,340 38,340 Z M37,350 L35,350
+L35,342 L37,342 L37,350 Z M45,338 L41,338 C40.448,338 40,338.448 40,339 L40,355
+C40,355.552 40.448,356 41,356 L45,356 C45.552,356 46,355.552 46,355 L46,339
+C46,338.448 45.552,338 45,338 Z M44,348 L42,348 L42,340 L44,340 L44,348 Z" />
+    </group>
+</vector>

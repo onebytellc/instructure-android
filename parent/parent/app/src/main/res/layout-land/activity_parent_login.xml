@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/parent_bg_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/canvas_logo"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/vd_parent_logo" />
+
+    <EditText
+        android:id="@+id/userName"
+        style="@style/Base.Widget.AppCompat.EditText.LoginEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_widthPercent="65%"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="32dp"
+        android:hint="@string/parent_email"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/password"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/Base.Widget.AppCompat.EditText.LoginEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="16dp"
+        app:layout_widthPercent="65%"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:hint="@string/password"
+        android:imeOptions="actionGo"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/next"
+        android:padding="8dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/Base.TextAppearance.AppCompat.Button.LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_widthPercent="40%"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:nextFocusDown="@+id/createAccount"
+        android:layout_toStartOf="@+id/or"
+        android:text="@string/log_in" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="@string/or"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        style="@style/Base.TextAppearance.AppCompat.Button.LoginButton"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="40%"
+        android:id="@+id/canvasLogin"
+        android:layout_toEndOf="@id/or"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:nextFocusDown="@+id/createAccount">
+
+        <TextView
+            android:id="@+id/canvasLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/canvas_login_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:layout_marginStart="8dp"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/canvas_logo_white"
+            android:layout_toStartOf="@id/canvasLoginText"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:nextFocusDown="@+id/forgotPassword"
+                android:padding="12dp"
+                android:text="@string/createAccount"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:text="@string/forgotPassword"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

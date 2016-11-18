@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/eula"
+        android:text="@string/EULA"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/defaultPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/privacyPolicy"
+        android:text="@string/privacyPolicy"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/defaultPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/termsOfUse"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/termsOfUse"
+        android:textColor="@color/defaultPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/openSource"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/openSource"
+        android:textColor="@color/defaultPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

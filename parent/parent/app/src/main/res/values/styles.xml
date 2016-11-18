@@ -1,0 +1,128 @@
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.AppCompat.NoActionBar.NavigationActivity">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="DetailsDialogAnimationVideo">
+        <item name="android:windowEnterAnimation">@anim/none</item>
+        <item name="android:windowExitAnimation">@anim/none</item>
+    </style>
+
+    <!--Text Styles-->
+    <style name="TextStyle.Primary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Primary.SingleLine.Gray">
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Primary.SingleLine.Navigation">
+        <item name="android:textColor">@color/defaultPrimary</item>
+    </style>
+
+    <style name="TextStyle.Primary.CardView">
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">center_vertical|start</item>
+    </style>
+
+    <style name="TextStyle.Secondary">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Secondary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Secondary.SingleLine.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Secondary.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Secondary.CardView">
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="TextStyle.Tertiary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/canvasTextMedium</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.SingleLine.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="TextStyle.Tertiary.Dark">
+        <item name="android:textColor">@color/canvasTextDark</item>
+    </style>
+
+    <style name="Base.TextAppearance.AppCompat.Button.LoginButton">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:textColor">@color/parentButtonTextDisabled</item>
+        <item name="android:background">@drawable/login_button_background</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.EditText.LoginEditText">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/lightgray</item>
+        <item name="android:background">@drawable/parent_et_bg</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+</resources>

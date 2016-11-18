@@ -1,0 +1,283 @@
+# License is access programmatically:
+# GoogleApiAvailability.getInstance().getOpenSourceSoftwareLicenseInfo(Context)
+- artifact: com.google.android.gms:+:+
+  skip: true
+
+# Not distributed in APK
+- artifact: com.google.code.findbugs:jsr305:+
+  skip: true
+
+# Not OSS
+- artifact: com.crashlytics.sdk.android:answers:+
+  skip: true
+
+# Not OSS
+- artifact: com.crashlytics.sdk.android:crashlytics:+
+  skip: true
+
+# Not OSS
+- artifact: com.crashlytics.sdk.android:crashlytics-core:+
+  skip: true
+
+# Not OSS
+- artifact: io.fabric.sdk.android:fabric:+
+  skip: true
+
+# Not OSS
+- artifact: com.crashlytics.sdk.android:beta:+
+  skip: true
+
+# Not OSS
+- artifact: com.pspdfkit:pspdfkit:+
+  skip: true
+
+- artifact: com.google.api-client:google-api-client-android:+
+  name: Android Platform Extensions to the Google APIs Client Library for Java.
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.google.http-client:google-http-client-android:+
+  name: Android Platform Extensions to the Google HTTP Client Library for Java.
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.getkeepsafe.relinker:relinker:+
+  name: ReLinker
+  copyrightHolder: Keepsafe Software Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/KeepSafe/ReLinker
+
+- artifact: org.apache.httpcomponents:httpmime:+
+  name: Apache HttpClient Mime
+  copyrightHolder: The Apache Software Foundation
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://hc.apache.org/httpcomponents-client
+
+- artifact: com.amazonaws:+:+
+  name: AWS SDK for Android
+  copyrightHolder: Amazon.com, Inc
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://aws.amazon.com/mobile/sdk/
+
+- artifact: com.github.marcoscgdev.EasyLicensesDialog:appcompatversion:+
+  name: marcoscgdev/EasyLicensesDialog
+  copyrightHolder: Marcos Calvo García
+  license: MIT License
+  licenseUrl: https://api.github.com/licenses/mit
+  url: https://github.com/marcoscgdev/EasyLicensesDialog
+
+- artifact: com.jakewharton:butterknife:+
+  name: Butterknife
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/JakeWharton/butterknife/
+
+- artifact: com.jakewharton:butterknife-annotations:+
+  name: Butterknife Annotations
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/JakeWharton/butterknife/
+
+- artifact: de.hdodenhof:circleimageview:+
+  name: CircleImageView
+  copyrightHolder: Henning Dodenhof
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/hdodenhof/CircleImageView
+
+- artifact: commons-cli:commons-cli:+
+  name: Commons CLI
+  copyrightHolder: The Apache Software Foundation
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://commons.apache.org/cli/
+
+- artifact: com.github.afollestad.material-dialogs:+:+
+  name: Material Dialogs
+  copyrightHolder: Aidan Michael Follestad
+  license: The MIT License (MIT)
+  url: https://github.com/afollestad/material-dialogs
+
+- artifact: com.google.dagger:dagger:+
+  name: Dagger
+  copyrightHolder: Google, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/google/dagger
+
+- artifact: com.darwinsys:hirondelle-date4j:+
+  name: date4j
+  copyrightHolder: Hirondelle Systems
+  license: BSD 3-Clause "New" or "Revised" license
+  licenseUrl: http://opensource.org/licenses/BSD-3-Clause
+  url: http://date4j.net
+
+- artifact: com.github.flavienlaurent.datetimepicker:library:+
+  name: DateTimePicker Library
+  copyrightHolder: Flavien Laurent (DatePicker) edisonw (TimePicker)
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0
+  url: https://github.com/flavienlaurent/DateTimePicker
+
+- artifact: com.google.firebase:+:+
+  name: Firebase
+  copyrightHolder: Google, Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0
+
+- artifact: com.getbase:floatingactionbutton:+
+  name: FloatingActionButton
+  copyrightHolder: Jerzy Chalupski
+  license: The Apache Software License, Version 2.0
+  licenseUrl: https://github.com/futuresimple/android-floating-action-button/blob/master/LICENSE.txt
+  url: https://github.com/futuresimple/android-floating-action-button
+
+- artifact: com.google.api-client:google-api-client:+
+  name: Google APIs Client Library for Java
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.google.http-client:google-http-client:+
+  name: Google HTTP Client Library for Java
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.google.oauth-client:google-oauth-client:+
+  name: Google OAuth Client Library for Java
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: org.greenrobot:eventbus:+
+  name: EventBus
+  copyrightHolder: Markus Junginger, greenrobot
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://greenrobot.org/eventbus/
+
+- artifact: com.google.code.gson:gson:+
+  name: Gson
+  copyrightHolder: Google Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: org.apache.httpcomponents:httpclient-android:+
+  name: HttpComponents Client for Android
+  copyrightHolder: The Apache Software Foundation
+  license: Apache License, Version 2.0
+  licenseUrl: LICENSE.txt
+  url: http://hc.apache.org/httpcomponents-client/
+
+- artifact: javax.inject:javax.inject:+
+  name: javax.inject
+  copyrightHolder: The JSR-330 Expert Group
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://code.google.com/p/atinject/
+
+- artifact: org.jsoup:jsoup:+
+  name: jsoup
+  copyrightHolder: Jonathan Hedley <jonathan@hedley.net>
+  license: The MIT License
+  licenseUrl: http://jsoup.com/license
+  url: http://jsoup.org/
+
+- artifact: me.zhanghai.android.materialprogressbar:library:+
+  name: MaterialProgressBar Library
+  copyrightHolder: Zhang Hai
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/DreaminginCodeZH/MaterialProgressBar
+
+- artifact: com.nineoldandroids:library:+
+  name: Nine Old Androids
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.squareup.okhttp:+:+
+  name: OkHttp
+  copyrightHolder: Square, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.squareup.okhttp3:logging-interceptor:+
+  name: OkHttp Logging Interceptor
+  copyrightHolder: Square, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.squareup.okio:okio:+
+  name: Okio
+  copyrightHolder: Square, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.squareup.picasso:picasso:+
+  name: Picasso
+  copyrightHolder: Square, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.squareup.retrofit2:+:+
+  name: Retrofit 2
+  copyrightHolder: Square, Inc.
+  license: Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+
+- artifact: com.mobprofs:retrofit-simplexmlconverter:+
+  name: retrofit-simplexmlconverter
+  copyrightHolder:  Mobile Professionals
+  license: Apache 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/mobile-professionals/retrofit-simplexmlconverter
+
+- artifact: com.makeramen:roundedimageview:+
+  name: RoundedImageView
+  copyrightHolder: Vincent Mi
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/vinc3m1/RoundedImageView
+
+- artifact: io.reactivex:rxandroid:+
+  name: RxAndroid
+  copyrightHolder: The RxAndroid authors
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/ReactiveX/RxAndroid
+
+- artifact: io.reactivex:rxjava:+
+  name: rxjava
+  copyrightHolder: Netflix, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/ReactiveX/RxJava
+
+- artifact: org.simpleframework:simple-xml:+
+  name: Simple XML
+  copyrightHolder: Niall Gallagher
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://simple.sourceforge.net
+
+- artifact: com.facebook.stetho:+:+
+  name: Stetho
+  copyrightHolder: Facebook, Inc.
+  license: BSD License
+  licenseUrl: https://github.com/facebook/stetho/blob/master/LICENSE
+  url: https://github.com/facebook/stetho
+
+- artifact: com.android.support:+:+
+  name: Android Support Library
+  copyrightHolder: Google, Inc.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt

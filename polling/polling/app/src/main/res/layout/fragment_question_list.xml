@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 - present  Instructure, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, version 3 of the License.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:id="@+id/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="@dimen/graph_width"
+                android:layout_height="@dimen/graph_height"
+                android:src="@drawable/graph"
+                android:layout_margin="32dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription=""/>
+            <TextView
+                android:id="@+id/no_poll_text_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/aqua_text"
+                android:text="@string/no_poll_text_teacher"
+                android:textSize="28sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_above="@+id/tap_here"/>
+            <TextView
+                android:id="@+id/tap_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/light_grey_text"
+                android:text="@string/tap_here"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_toRightOf="@+id/tap_here"
+                android:layout_alignBottom="@+id/tap_here"
+                android:layout_below="@+id/no_poll_text_teacher"
+                android:layout_marginLeft="8dp"/>
+
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+
+            android:id="@+id/swipeRefreshLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            >
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:scrollbarStyle="outsideOverlay"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <com.instructure.androidpolling.app.view.CircleButton
+            android:id="@+id/addQuestion"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cb_color="@color/polling_aqua"
+            app:cb_pressed_ring_width="8dp"
+            android:src="@drawable/ic_action_new"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+</FrameLayout>
